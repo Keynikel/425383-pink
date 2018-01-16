@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Ольга Басюк](https://up.htmlacademy.ru/adaptive/13/user/425383).
-* Наставник: `Неизвестно`.
+* Наставник: [Галина Борисова](https://up.htmlacademy.ru/htmlcss/19/user/235021).
 
 ---
 
