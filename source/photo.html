@@ -7,35 +7,39 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo" href="#">
-        <img class="page-header__logo-image" src="" width="75" height="25" alt="Pink">
-      </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          Открыть меню
-        </button>
+        <div class="main-nav__panel-wrapper">
+          <a class="page-header__logo" href="#">
+            <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="25" alt="Pink">
+          </a>
+          <button class="main-nav__toggle" type="button">
+            Открыть меню
+          </button>
+        </div>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a href="index.html">Главная</a>
+              <a class="site-list__href" href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
-              <a>Фотографии</a>
+              <a class="site-list__href">Фотографии</aclass>
             </li>
             <li class="site-list__item">
-              <a href="form.html">Конкурс</a>
+              <a class="site-list__href" href="form.html">Конкурс</a>
             </li>
             <li class="site-list__item">
-              <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+              <a class="site-list__href" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
     <main class="page-main">
-      <h1 class="page-main__title">
-        Фотографии пользователей
-      </h1>
+      <section class="promo promo--photo">
+        <h1 class="promo__text">
+          Фотографии пользователей
+        </h1>
+      </section>
       <p class="page-main__description">
         Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
       </p>
@@ -43,10 +47,10 @@
         <h2 class="visually-hidden">Лента фотографий</h2>
         <ul class="photos__list">
           <li class="photos__item">
-            <img class="photos__photo photos__photo--top" width="320" height="140" src="" alt="Фотография Анны">
+            <img class="photos__photo photos__photo--top" width="320" height="140" src="img/panorama-mobile@1x.jpg" alt="Фотография Анны">
             <div class="photos__description">
               <b class="photos__author">Анна</b>
-              <p class="photos__timestamp">(5 минут назад)</p>
+              <span class="photos__timestamp">(5 минут назад)</span>
               <p class="photos__text">
                 Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
               </p>
@@ -54,10 +58,10 @@
             </div>
           </li>
           <li class="photos__item">
-            <img class="photos__photo " width="280" height="180" src="" alt="Фото Левона">
+            <img class="photos__photo " width="280" height="180" src="img/photo-car-mobile@1x.jpg" alt="Фото Левона">
             <div class="photos__description">
               <b class="photos__author">Левон</b>
-              <p class="photos__timestamp">(5 часов назад)</p>
+              <span class="photos__timestamp">(5 часов назад)</span>
               <p class="photos__text">
               Вчера он на луну летал, сегодня в руки к нам попал.
               </p>
@@ -65,10 +69,10 @@
             </div>
           </li>
           <li class="photos__item">
-            <img class="photos__photo" width="280" height="180" src="" alt="Фото Антона">
+            <img class="photos__photo" width="280" height="180" src="img/photo-drumset-mobile@1x.jpg" alt="Фото Антона">
             <div class="photos__description">
               <b class="photos__author">Антон</b>
-              <p class="photos__timestamp">(12 часов назад)</p>
+              <span class="photos__timestamp">(12 часов назад)</span>
               <p class="photos__text">
                 Соседи будут рады!
               </p>
@@ -76,10 +80,10 @@
             </div>
           </li>
           <li class="photos__item">
-            <img class="photos__photo" width="280" height="180" src="" alt="Фото Бориса">
+            <img class="photos__photo" width="280" height="180" src="img/photo-window-mobile@1x.jpg" alt="Фото Бориса">
             <div class="photos__description">
               <b class="photos__author">Борис</b>
-              <p class="photos__timestamp">(20 часов назад)</p>
+              <span class="photos__timestamp">(20 часов назад)</span>
               <p class="photos__text">
                 Здесь могла быть ваша цитата о высоком и вечном.
               </p>
@@ -87,10 +91,10 @@
             </div>
           </li>
           <li class="photos__item">
-            <img class="photos__photo" width="280" height="180" src="" alt="Фото Сергея">
+            <img class="photos__photo" width="280" height="180" src="img/photo-fair-mobile@1x.jpg" alt="Фото Сергея">
             <div class="photos__description">
               <b class="photos__author">Сергей</b>
-              <p class="photos__timestamp">(25 часов назад)</p>
+              <span class="photos__timestamp">(25 часов назад)</span>
               <p class="photos__text">
                 Самая кубанская в мире!
               </p>
@@ -98,10 +102,10 @@
             </div>
           </li>
           <li class="photos__item">
-            <img class="photos__photo" width="280" height="180" src="" alt="Фото Максима">
+            <img class="photos__photo" width="280" height="180" src="img/photo-pov-mobile@1x.jpg" alt="Фото Максима">
             <div class="photos__description">
               <b class="photos__author">Максим</b>
-              <p class="photos__timestamp">(40 часов назад)</p>
+              <span class="photos__timestamp">(40 часов назад)</span>
               <p class="photos__text">
                 Где снег-то?
               </p>
@@ -109,10 +113,10 @@
             </div>
           </li>
           <li class="photos__item">
-            <img class="photos__photo" width="280" height="180" src="" alt="Фото Надежды">
+            <img class="photos__photo" width="280" height="180" src="img/photo-wing-mobile@1x.jpg" alt="Фото Надежды">
             <div class="photos__description">
               <b class="photos__author">Надежда</b>
-              <p class="photos__timestamp">(45 часов назад)</p>
+              <span class="photos__timestamp">(45 часов назад)</span>
               <p class="photos__text">
                 Всем GM и взаимные лайки!
               </p>
@@ -120,41 +124,52 @@
             </div>
           </li>
         </ul>
-        <p class="photos__description">
-          Затмите их всех! Выкладывайте все, что накопилось в телефоне!
+        <p class="photos__slogan">
+          Затмите их всех! <br>
+          Выкладывайте все, что накопилось в телефоне!
         </p>
       </section>
       <section class="editor">
-        <img class="editor__photo" width="280" height="375" src="" alt="Фотография для редактирования">
+        <img class="editor__photo" width="280" height="375" src="img/photo-road-mobile@1x.jpg" alt="Фотография для редактирования">
         <div class="editor__instruments">
           <button class="editor__tools editor__tools--crop editor__tools--active">Обрезать</button>
           <button class="editor__tools editor__tools--color editor__tools--deactive">Цвет</button>
           <button class="editor__tools editor__tools--bright editor__tools--deactive">Яркость</button>
           <div class="editor__scale"></div>
         </div>
-        <button class="editor__post button editor__post--active">Запостить</button>
-        <button class="editor__post button editor__post--deactive">Отмена</button>
+        <div class="editor__buttons">
+          <button class="editor__post button button--pink">Запостить</button>
+          <button class="editor__cancel button button--deactive">Отмена</button>
+        </div>
       </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <a class="page-footer__logo">
-          <img class="page-footer__logo-image" width="145" height="50" src="" alt="Логотип Pink">
+          <img class="page-footer__logo-image" width="145" height="50" src="img/logo-pink-blue-mobile.svg" alt="Логотип Pink">
         </a>
         <ul class="page-footer__socials">
           <li class="page-footer__twitter">
-            <a href="#" aria-label="Twitter">Twitter</a>
+            <a href="#" aria-label="Twitter">
+              <span>Twitter</span>
+            </a>
           </li>
           <li class="page-footer__facebook">
-            <a href="#" aria-label="Facebook">Facebook</a>
+            <a href="#" aria-label="Facebook">
+              <span>Facebook</span>
+            </a>
           </li>
           <li class="page-footer__youtube">
-            <a href="#" aria-label="Youtube">Youtube</a>
+            <a href="#" aria-label="Youtube">
+              <span>Youtube</span>
+            </a>
           </li>
         </ul>
         <div class="page-footer__copyrights copyright">
-          <b class="copyright__text"> Разработано</b>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <span class="copyright__text"> Разработано</span>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <span>HTML Academy</span>
+          </a>
         </div>
       </div>
     </footer>
