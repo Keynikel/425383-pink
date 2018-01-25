@@ -10,6 +10,17 @@
   line-height: 18px;
   color: @white;
 
+  &:hover{
+    background-color: @white;
+    color: @pink;
+    cursor: pointer;
+  }
+
+  &:active{
+    color: fade(@pink, 30);
+    background-color: @white;
+  }
+
   &--pink{
     width: 280px;
     border-color: @pink;
@@ -17,10 +28,34 @@
     background-color: transparent;
   }
 
-  &--deactive{
+  &--pink:hover{
+    background-color: @pink;
+    color: @white;
+  }
+
+  &--pink:active{
+    background-color: @pink;
+    color: fade(@white, 30);
+  }
+
+  &--cancel{
     width: 280px;
     border-color: @gray;
     color: @gray;
     background-color: transparent;
   }
+
+  &--cancel:hover{
+    background-color: transparent;
+    border-color: @dark-gray;
+    color: #c4c6c8
+  }
+
+  &--cancel:active{
+    background-color: @dark-gray;
+    border-color: @dark-gray;
+    color: @gray;
+  }
+
+
 }

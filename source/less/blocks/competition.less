@@ -1,5 +1,15 @@
 .competition{
-  padding: 0px 20px;
+  padding: 0;
+}
+
+.competition__wrapper{
+  padding-top: 40px;
+  &--white{
+    background-color: @white;
+  }
+  &--gray{
+    background-color: @light-gray;
+  }
 }
 
 .competition__fields{
@@ -7,12 +17,6 @@
   padding: 0;
   width: 280px;
   border: none;
-  &--white{
-    background-color: @white;
-  }
-  &--gray{
-    background-color: @light-gray;
-  }
 }
 
 .competition__field{
@@ -36,6 +40,7 @@
 }
 
 .competition__legend{
+  padding-bottom: 20px;
   font-size: 14px;
   line-height: 18px;
   color: @pink;
@@ -46,7 +51,7 @@
 .competition__checklist{
   margin: 0;
   padding: 0;
-  padding-top: 40px;
+  padding-top: 20px;
   list-style: none;
 }
 
@@ -63,7 +68,7 @@
 .competition__application-list{
   margin: 0;
   padding: 0;
-  padding-top: 40px;
+  padding-top: 20px;
   list-style: none;
 }
 
@@ -88,4 +93,16 @@
   font-weight: bold;
   color: @white;
   text-transform: uppercase;
+}
+
+.competition__additional{
+  font-size: 14px;
+  line-height: 30px;
+  color: @midnight;
+  text-transform: uppercase;
+  text-align: center;
+
+  &--important{
+    color: @pink;
+  }
 }

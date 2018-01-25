@@ -4,12 +4,20 @@
   font-size: 18px;
   line-height: 32px;
   font-weight: bold;
-  color: #ffffff;
+  color: @white;
   text-transform: uppercase;
   text-align: center;
 }
 
 .site-list__href{
-  color: #ffffff;
+  color: @white;
   text-decoration: none;
+}
+
+.site-list__href:hover{
+  color: @pink;
+}
+
+.site-list__href:active{
+  color: fade(@pink, 30);
 }
