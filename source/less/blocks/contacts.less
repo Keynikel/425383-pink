@@ -43,3 +43,43 @@
   color: @pink;
   text-decoration: none;
 }
+
+@media (min-width: @tablet-width){
+  .contacts__slogan{
+    font-size: 40px;
+    font-weight: lighter;
+    color: @midnight;
+  }
+
+  .contacts__list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .contacts__phone,
+  .contacts__mail{
+    min-width: 50%;
+  }
+
+  .contacts__address{
+    min-width: 100%;
+  }
+
+  .contacts__address .contacts__text{
+    width: 220px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width){
+  .contacts__slogan{
+    font-size: 50px;
+  }
+
+  .contacts__phone,
+  .contacts__mail,
+  .contacts__address{
+    min-width: 33.3%;
+  }
+}

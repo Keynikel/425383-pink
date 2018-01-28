@@ -1,3 +1,8 @@
+.site-list{
+  display: flex;
+  flex-direction: column;
+}
+
 .site-list__item{
   padding: 20px 0px;
   border-top: 2px solid #485461;
@@ -20,4 +25,15 @@
 
 .site-list__href:active{
   color: fade(@pink, 30);
+}
+
+@media (min-width: @desktop-width){
+  .site-list{
+    flex-direction: row;
+  }
+
+  .site-list__item{
+    padding: 0px 40px;
+    border: none;
+  }
 }
