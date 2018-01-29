@@ -1,15 +1,23 @@
 .competition {
   padding: 0;
 }
+.competition__slogan {
+  margin: 0;
+  padding: 50px 20px;
+  font-size: 14px;
+  line-height: 30px;
+  color: @midnight;
+  text-align: center;
+}
 
 .competition__wrapper {
   padding-top: 40px;
 
-  &--white {
+  &--odd {
     background-color: @white;
   }
 
-  &--gray {
+  &--even {
     background-color: @light-gray;
   }
 }
@@ -107,4 +115,72 @@
   &--important {
     color: @pink;
   }
+}
+
+@media (min-width: @tablet-width) {
+  .competition__form{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .competition__personal-data {
+    order: 1;
+  }
+
+  .competition__application-data {
+    order: 2;
+  }
+
+  .competition__contacts-data {
+    order: 3;
+  }
+
+  .competition__achieve-fields {
+    order: 4;
+  }
+
+  .competition__emotion-description {
+    order: 5;
+  }
+
+  .competition__buttons {
+    order: 6;
+  }
+}
+
+@media (min-width: @desktop-width){
+  .competition__wrapper {
+    &--even {
+      background-color: @white;
+    }
+  }
+
+  .competition__form{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .competition__personal-data,
+  .competition__application-data {
+    width: 50%;
+  }
+
+  .competition__contacts-data,
+  .competition__achieve-fields,
+  .competition__emotion-description,
+  .competition__buttons {
+    width: 100%;
+  }
+
+  .competition__fields{
+    width: 940px;
+  }
+
+  .competition__contacts-data .competition__fields{
+    display: flex;
+  }
+
+
+
+
 }
