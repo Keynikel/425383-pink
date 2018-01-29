@@ -1,5 +1,4 @@
 .prices {
-  display: flex;
   padding: 45px 0;
   background-color: @light-gray;
 }
@@ -68,6 +67,13 @@
 }
 
 @media (min-width: @tablet-width){
+  .prices__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
   .prices__list {
       width: 620px;
   }

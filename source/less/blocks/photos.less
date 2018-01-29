@@ -4,6 +4,13 @@
   list-style: none;
 }
 
+.photos__photo {
+  &--top{
+    width: 100%;
+    height: auto;
+  }
+}
+
 .photos__item {
   display: flex;
   flex-direction: column;
@@ -53,4 +60,40 @@
   line-height: 30px;
   color: @midnight;
   text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .photos__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .photos__item:not(:first-child) {
+    width: 50%;
+  }
+
+  .photos__item:first-child {
+    width: 100%;
+
+    .photos__description {
+      width: 620px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photos__item:not(:first-child) {
+    width: 33.3%;
+  }
+
+  .photos__item:first-child {
+    .photos__description {
+      width: 940px;
+    }
+  }
+
+  .photos__slogan {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }

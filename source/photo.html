@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="page-header page-header--index">
+    <header class="page-header page-header--photo">
         <nav class="main-nav">
           <div class="main-nav__main-wrapper">
             <div class="main-nav__logo-wrapper">
@@ -42,11 +42,12 @@
         </div>
       </header>
     <main class="page-main">
-      <p class="page-main__description">
-        Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
-      </p>
       <section class="photos">
         <h2 class="visually-hidden">Лента фотографий</h2>
+        <p class="photos__slogan">
+          Взгляните на фотографии, которые выкладывают пользователи! <br>
+          Видите, как не хватает ваших?
+        </p>
         <ul class="photos__list">
           <li class="photos__item">
             <img class="photos__photo photos__photo--top" width="320" height="140" src="img/panorama-mobile@1x.jpg" alt="Фотография Анны">
@@ -132,16 +133,20 @@
         </p>
       </section>
       <section class="editor">
-        <img class="editor__photo" width="280" height="375" src="img/photo-road-mobile@1x.jpg" alt="Фотография для редактирования">
-        <div class="editor__instruments">
-          <button class="editor__tools editor__tools--crop editor__tools--active">Обрезать</button>
-          <button class="editor__tools editor__tools--color editor__tools--deactive">Цвет</button>
-          <button class="editor__tools editor__tools--bright editor__tools--deactive">Яркость</button>
-          <div class="editor__scale"></div>
-        </div>
-        <div class="editor__buttons">
-          <button class="editor__post button button--pink">Запостить</button>
-          <button class="editor__cancel button button--cancel">Отмена</button>
+        <div class="editor__wrapper">
+          <img class="editor__photo" width="280" height="375" src="img/photo-road-mobile@1x.jpg" alt="Фотография для редактирования">
+          <div class="editor__instruments">
+            <div class="editor__tools">
+              <button class="editor__tool editor__tool--crop editor__tool--active">Обрезать</button>
+              <button class="editor__tool editor__tool--color editor__tool--deactive">Цвет</button>
+              <button class="editor__tool editor__tool--bright editor__tool--deactive">Яркость</button>
+              <div class="editor__scale"></div>
+            </div>
+            <div class="editor__buttons">
+              <button class="editor__post button button--pink">Запостить</button>
+              <button class="editor__cancel button button--cancel">Отмена</button>
+            </div>
+          </div>
         </div>
       </section>
     </main>
