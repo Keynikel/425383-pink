@@ -6,40 +6,42 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="page-header">
-      <nav class="main-nav">
-        <div class="main-nav__panel-wrapper">
-          <a class="page-header__logo" href="#">
-            <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="25" alt="Pink">
-          </a>
-          <button class="main-nav__toggle" type="button">
-            Открыть меню
-          </button>
+    <header class="page-header page-header--index">
+        <nav class="main-nav">
+          <div class="main-nav__main-wrapper">
+            <div class="main-nav__logo-wrapper">
+              <a class="logo logo--header" href="index.html">
+                <img class="" src="img/logo-pink-white-mobile.svg" width="75" height="25" alt="Pink">
+              </a>
+              <button class="main-nav__toggle" type="button">
+                Открыть меню
+              </button>
+            </div>
+            <div class="main-nav__wrapper">
+              <ul class="main-nav__list site-list">
+                <li class="site-list__item">
+                  <a class="site-list__href" href="index.html">Главная</a>
+                </li>
+                <li class="site-list__item">
+                  <a class="site-list__href">Фотографии</aclass>
+                </li>
+                <li class="site-list__item">
+                  <a class="site-list__href" href="form.html">Конкурс</a>
+                </li>
+                <li class="site-list__item">
+                  <a class="site-list__href" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="page-header__wrapper">
+          <section class="intro intro--photo">
+            <h1 class="intro__header">Фотографии пользователей</h1>
+          </section>
         </div>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a class="site-list__href" href="index.html">Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__href">Фотографии</aclass>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__href" href="form.html">Конкурс</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__href" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+      </header>
     <main class="page-main">
-      <section class="promo promo--photo">
-        <h1 class="promo__text">
-          Фотографии пользователей
-        </h1>
-      </section>
       <p class="page-main__description">
         Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
       </p>

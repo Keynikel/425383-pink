@@ -1,15 +1,25 @@
-.intro{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.intro {
+  min-height: 270px;
   background-color: #1d2631;
 }
 
-.intro__link{
+.intro__header {
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+
+.intro__download {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.intro__link {
   margin-top: 28px;
 }
 
-.intro__description{
+.intro__description {
   max-width: 320px;
   font-size: 14px;
   line-height: 24px;
@@ -17,11 +27,31 @@
   text-align: center;
 }
 
-.intro__platforms{
+.intro__platforms {
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: row;
   align-items: center;
   list-style: none;
+}
+
+@media (min-width: @tablet-width) {
+  .intro {
+    background-color: transparent;
+
+    &--index {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .intro__header {
+    display: block;
+    width: 300px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: lighter;
+  }
 }
