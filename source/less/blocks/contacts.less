@@ -1,5 +1,6 @@
 .contacts {
-  padding: 45px 0;
+  padding: 0;
+  padding-top: 45px;
 }
 
 .contacts__slogan {
@@ -43,6 +44,16 @@
   text-decoration: none;
 }
 
+.contacts__map{
+  height: 200px;
+  background-image: url("../img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto,320px auto;
+  background-position: 50% 0,50% 0;
+  font-size: 0;
+  line-height: 0;
+}
+
 @media (min-width: @tablet-width) {
   .contacts__slogan {
     font-size: 40px;
@@ -69,9 +80,18 @@
     width: 220px;
     margin: 0 auto;
   }
+
+  .contacts__map {
+    height: 377px;
+  }
 }
 
 @media (min-width: @desktop-width) {
+  .contacts__map {
+    height: 501px;
+    background-size: cover;
+  }
+
   .contacts__slogan {
     font-size: 50px;
   }

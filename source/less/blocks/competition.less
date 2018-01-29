@@ -13,14 +13,11 @@
 
 .competition__wrapper {
   padding-top: 40px;
+}
 
-  &--odd {
-    background-color: @white;
-  }
-
-  &--even {
-    background-color: @light-gray;
-  }
+.competition__achieve-fields,
+.competition__application-data {
+  background-color: @light-gray;
 }
 
 .competition__fields {
@@ -119,7 +116,7 @@
 }
 
 @media (min-width: @tablet-width) {
-  .competition__form{
+  .competition__form {
     display: flex;
     flex-direction: column;
   }
@@ -150,10 +147,9 @@
 }
 
 @media (min-width: @desktop-width) {
-  .competition__wrapper {
-    &--even {
-      background-color: @white;
-    }
+  .competition__achieve-fields,
+  .competition__application-data {
+    background-color: @white;
   }
 
   .competition__form {
@@ -177,7 +173,7 @@
     width: 940px;
   }
 
-  .competition__contacts-data .competition__fields{
+  .competition__contacts-data .competition__fields {
     display: flex;
   }
 }

@@ -49,9 +49,9 @@
           Видите, как не хватает ваших?
         </p>
         <ul class="photos__list">
-          <li class="photos__item">
+          <li class="photos__item photos__item--top">
             <img class="photos__photo photos__photo--top" width="320" height="140" src="img/panorama-mobile@1x.jpg" alt="Фотография Анны">
-            <div class="photos__description">
+            <div class="photos__description photos__description--top">
               <b class="photos__author">Анна</b>
               <span class="photos__timestamp">(5 минут назад)</span>
               <p class="photos__text">
@@ -60,72 +60,74 @@
               <p class="photos__likes"> Нравится: 215</p>
             </div>
           </li>
-          <li class="photos__item">
-            <img class="photos__photo " width="280" height="180" src="img/photo-car-mobile@1x.jpg" alt="Фото Левона">
-            <div class="photos__description">
-              <b class="photos__author">Левон</b>
-              <span class="photos__timestamp">(5 часов назад)</span>
-              <p class="photos__text">
-              Вчера он на луну летал, сегодня в руки к нам попал.
-              </p>
-              <p class="photos__likes"> Нравится: 356</p>
-            </div>
-          </li>
-          <li class="photos__item">
-            <img class="photos__photo" width="280" height="180" src="img/photo-drumset-mobile@1x.jpg" alt="Фото Антона">
-            <div class="photos__description">
-              <b class="photos__author">Антон</b>
-              <span class="photos__timestamp">(12 часов назад)</span>
-              <p class="photos__text">
-                Соседи будут рады!
-              </p>
-              <p class="photos__likes"> Нравится: 666</p>
-            </div>
-          </li>
-          <li class="photos__item">
-            <img class="photos__photo" width="280" height="180" src="img/photo-window-mobile@1x.jpg" alt="Фото Бориса">
-            <div class="photos__description">
-              <b class="photos__author">Борис</b>
-              <span class="photos__timestamp">(20 часов назад)</span>
-              <p class="photos__text">
-                Здесь могла быть ваша цитата о высоком и вечном.
-              </p>
-              <p class="photos__likes"> Нравится: 215</p>
-            </div>
-          </li>
-          <li class="photos__item">
-            <img class="photos__photo" width="280" height="180" src="img/photo-fair-mobile@1x.jpg" alt="Фото Сергея">
-            <div class="photos__description">
-              <b class="photos__author">Сергей</b>
-              <span class="photos__timestamp">(25 часов назад)</span>
-              <p class="photos__text">
-                Самая кубанская в мире!
-              </p>
-              <p class="photos__likes"> Нравится: 4</p>
-            </div>
-          </li>
-          <li class="photos__item">
-            <img class="photos__photo" width="280" height="180" src="img/photo-pov-mobile@1x.jpg" alt="Фото Максима">
-            <div class="photos__description">
-              <b class="photos__author">Максим</b>
-              <span class="photos__timestamp">(40 часов назад)</span>
-              <p class="photos__text">
-                Где снег-то?
-              </p>
-              <p class="photos__likes"> Нравится: 150</p>
-            </div>
-          </li>
-          <li class="photos__item">
-            <img class="photos__photo" width="280" height="180" src="img/photo-wing-mobile@1x.jpg" alt="Фото Надежды">
-            <div class="photos__description">
-              <b class="photos__author">Надежда</b>
-              <span class="photos__timestamp">(45 часов назад)</span>
-              <p class="photos__text">
-                Всем GM и взаимные лайки!
-              </p>
-              <p class="photos__likes"> Нравится: 2560</p>
-            </div>
-          </li>
+          <div class="photos__wrapper">
+            <li class="photos__item">
+              <img class="photos__photo " width="280" height="180" src="img/photo-car-mobile@1x.jpg" alt="Фото Левона">
+              <div class="photos__description">
+                <b class="photos__author">Левон</b>
+                <span class="photos__timestamp">(5 часов назад)</span>
+                <p class="photos__text">
+                Вчера он на луну летал, сегодня в руки к нам попал.
+                </p>
+                <p class="photos__likes"> Нравится: 356</p>
+              </div>
+            </li>
+            <li class="photos__item">
+              <img class="photos__photo" width="280" height="180" src="img/photo-drumset-mobile@1x.jpg" alt="Фото Антона">
+              <div class="photos__description">
+                <b class="photos__author">Антон</b>
+                <span class="photos__timestamp">(12 часов назад)</span>
+                <p class="photos__text">
+                  Соседи будут рады!
+                </p>
+                <p class="photos__likes"> Нравится: 666</p>
+              </div>
+            </li>
+            <li class="photos__item">
+              <img class="photos__photo" width="280" height="180" src="img/photo-window-mobile@1x.jpg" alt="Фото Бориса">
+              <div class="photos__description">
+                <b class="photos__author">Борис</b>
+                <span class="photos__timestamp">(20 часов назад)</span>
+                <p class="photos__text">
+                  Здесь могла быть ваша цитата о высоком и вечном.
+                </p>
+                <p class="photos__likes"> Нравится: 215</p>
+              </div>
+            </li>
+            <li class="photos__item">
+              <img class="photos__photo" width="280" height="180" src="img/photo-fair-mobile@1x.jpg" alt="Фото Сергея">
+              <div class="photos__description">
+                <b class="photos__author">Сергей</b>
+                <span class="photos__timestamp">(25 часов назад)</span>
+                <p class="photos__text">
+                  Самая кубанская в мире!
+                </p>
+                <p class="photos__likes"> Нравится: 4</p>
+              </div>
+            </li>
+            <li class="photos__item">
+              <img class="photos__photo" width="280" height="180" src="img/photo-pov-mobile@1x.jpg" alt="Фото Максима">
+              <div class="photos__description">
+                <b class="photos__author">Максим</b>
+                <span class="photos__timestamp">(40 часов назад)</span>
+                <p class="photos__text">
+                  Где снег-то?
+                </p>
+                <p class="photos__likes"> Нравится: 150</p>
+              </div>
+            </li>
+            <li class="photos__item">
+              <img class="photos__photo" width="280" height="180" src="img/photo-wing-mobile@1x.jpg" alt="Фото Надежды">
+              <div class="photos__description">
+                <b class="photos__author">Надежда</b>
+                <span class="photos__timestamp">(45 часов назад)</span>
+                <p class="photos__text">
+                  Всем GM и взаимные лайки!
+                </p>
+                <p class="photos__likes"> Нравится: 2560</p>
+              </div>
+            </li>
+          </div>
         </ul>
         <p class="photos__slogan">
           Затмите их всех! <br>
@@ -136,12 +138,32 @@
         <div class="editor__wrapper">
           <img class="editor__photo" width="280" height="375" src="img/photo-road-mobile@1x.jpg" alt="Фотография для редактирования">
           <div class="editor__instruments">
-            <div class="editor__tools">
-              <button class="editor__tool editor__tool--crop editor__tool--active">Обрезать</button>
-              <button class="editor__tool editor__tool--color editor__tool--deactive">Цвет</button>
-              <button class="editor__tool editor__tool--bright editor__tool--deactive">Яркость</button>
-              <div class="editor__scale"></div>
-            </div>
+            <ul class="editor__tools">
+              <li class="editor__tool editor__tool--crop editor__tool--active">
+                <div class="editor__bar">
+                  Обрезать
+                </div>
+                <div class="editor__scale">
+
+                </div>
+              </li>
+              <li class="editor__tool editor__tool--crop editor__tool--active">
+                <div class="editor__bar">
+                  Цвет
+                </div>
+                <div class="editor__scale">
+
+                </div>
+              </li>
+              <li class="editor__tool editor__tool--crop editor__tool--deactive">
+                <div class="editor__bar">
+                  Яркость
+                </div>
+                <div class="editor__scale">
+
+                </div>
+              </li>
+            </ul>
             <div class="editor__buttons">
               <button class="editor__post button button--pink">Запостить</button>
               <button class="editor__cancel button button--cancel">Отмена</button>
