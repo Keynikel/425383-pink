@@ -7,6 +7,20 @@
   padding-top: 81px;
   list-style: none;
   background-color: @light-gray;
+  background-image: url(../img/bg-triangle-white.svg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: 50% 0;
+
+  &::after {
+    content: "";
+    width: 155px;
+    height: 320px;
+    background-image: url("../img/iphone-screen-mobile@1x.png");
+    background-size: 155px 320px;
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
 }
 
 .advantages-list__item {
@@ -32,11 +46,50 @@
   color: #283645;
 }
 
-@media (min-width: @desktop-width) {
+@media (min-width: @tablet-width) {
   .advantages-list {
+    flex-direction: row;
+    justify-content: center;
+    padding: 0px 20px;
+
+    &::after{
+      order: 1;
+      width: 300px;
+      height: 545px;
+      background-size: 256px 545px;
+    }
+  }
+
+  .advantages-list__wrapper {
+    order: 2;
+    padding-top: 50px;
+  }
+
+  .advantages-list__item {
+    text-align: left;
+    min-width: 310px;
+}
+
+  .advantages-list__title {
+    padding-bottom: 18px;
+  }
+
+
+}
+
+@media (min-width: @desktop-width) {
+  .advantages-list__wrapper {
+    display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: center;
+  }
+
+  .advantages-list {
+
+    &::after{
+      display: none;
+    }
   }
 
   .advantages-list__title {
