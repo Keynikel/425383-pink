@@ -1,5 +1,10 @@
-.site-list__item{
-  padding: 20px 0px;
+.site-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.site-list__item {
+  padding: 20px 0;
   border-top: 2px solid #485461;
   font-size: 18px;
   line-height: 32px;
@@ -9,15 +14,26 @@
   text-align: center;
 }
 
-.site-list__href{
+.site-list__href {
   color: @white;
   text-decoration: none;
 }
 
-.site-list__href:hover{
+.site-list__href:hover {
   color: @pink;
 }
 
-.site-list__href:active{
+.site-list__href:active {
   color: fade(@pink, 30);
+}
+
+@media (min-width: @desktop-width) {
+  .site-list {
+    flex-direction: row;
+  }
+
+  .site-list__item {
+    padding: 0 40px;
+    border: none;
+  }
 }

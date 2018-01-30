@@ -1,29 +1,37 @@
-.competition{
+.competition {
   padding: 0;
 }
 
-.competition__wrapper{
-  padding-top: 40px;
-  &--white{
-    background-color: @white;
-  }
-  &--gray{
-    background-color: @light-gray;
-  }
+.competition__slogan {
+  margin: 0;
+  padding: 50px 20px;
+  font-size: 14px;
+  line-height: 30px;
+  color: @midnight;
+  text-align: center;
 }
 
-.competition__fields{
+.competition__wrapper {
+  padding-top: 40px;
+}
+
+.competition__achieve-fields,
+.competition__application-data {
+  background-color: @light-gray;
+}
+
+.competition__fields {
   margin: 0 auto;
   padding: 0;
   width: 280px;
   border: none;
 }
 
-.competition__field{
+.competition__field {
   padding-bottom: 25px;
 }
 
-.competition__label{
+.competition__label {
   display: block;
   padding-bottom: 15px;
   font-size: 14px;
@@ -32,14 +40,14 @@
   text-transform: uppercase;
 }
 
-.competition__input{
+.competition__input {
   box-sizing: border-box;
   width: 100%;
   padding: 20px;
   border: 2px solid #e5e5e5;
 }
 
-.competition__legend{
+.competition__legend {
   padding-bottom: 20px;
   font-size: 14px;
   line-height: 18px;
@@ -48,43 +56,43 @@
   text-align: center;
 }
 
-.competition__checklist{
+.competition__checklist {
   margin: 0;
   padding: 0;
   padding-top: 20px;
   list-style: none;
 }
 
-.competition__achievements{
+.competition__achievements {
   padding-bottom: 40px;
 }
 
-.competition__checks-label{
+.competition__checks-label {
   font-size: 18px;
   line-height: 30px;
   color: @midnight;
 }
 
-.competition__application-list{
+.competition__application-list {
   margin: 0;
   padding: 0;
   padding-top: 20px;
   list-style: none;
 }
 
-.competition__application{
+.competition__application {
   padding-bottom: 40px;
 }
 
-.competition__textarea{
+.competition__textarea {
   width: 100%;
   box-sizing: border-box;
   min-height: 200px;
-  padding: 15px 20px 0px 20px;
+  padding: 15px 20px 0 20px;
   border: 2px solid #e5e5e5;
 }
 
-.competition__submit{
+.competition__submit {
   padding: 14px 44px;
   border: 3px solid #2aab6d;
   background-color: #2aab6d;
@@ -95,14 +103,77 @@
   text-transform: uppercase;
 }
 
-.competition__additional{
+.competition__additional {
   font-size: 14px;
   line-height: 30px;
   color: @midnight;
   text-transform: uppercase;
   text-align: center;
 
-  &--important{
+  &--important {
     color: @pink;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .competition__form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .competition__personal-data {
+    order: 1;
+  }
+
+  .competition__application-data {
+    order: 2;
+  }
+
+  .competition__contacts-data {
+    order: 3;
+  }
+
+  .competition__achieve-fields {
+    order: 4;
+  }
+
+  .competition__emotion-description {
+    order: 5;
+  }
+
+  .competition__buttons {
+    order: 6;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .competition__achieve-fields,
+  .competition__application-data {
+    background-color: @white;
+  }
+
+  .competition__form {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .competition__personal-data,
+  .competition__application-data {
+    width: 50%;
+  }
+
+  .competition__contacts-data,
+  .competition__achieve-fields,
+  .competition__emotion-description,
+  .competition__buttons {
+    width: 100%;
+  }
+
+  .competition__fields {
+    width: 940px;
+  }
+
+  .competition__contacts-data .competition__fields {
+    display: flex;
   }
 }
