@@ -29,12 +29,14 @@
   align-items: center;
 }
 
-.intro__link {
+.intro__download {
   margin-top: 28px;
 }
 
 .intro__description {
-  max-width: 320px;
+  margin: 0;
+  padding: 0;
+  max-width: 230px;
   font-size: 14px;
   line-height: 24px;
   color: #ffffff;
@@ -42,12 +44,40 @@
 }
 
 .intro__platforms {
+  width: 215px;
   margin: 0;
   padding: 0;
+  padding-top: 35px;
+  padding-bottom: 21px;
   display: flex;
-  flex-direction: row;
   align-items: center;
+  justify-content: space-between;
   list-style: none;
+}
+
+.intro__link {
+  display: block;
+  width: 45px;
+  height: 55px;
+  background-repeat: no-repeat;
+
+  &--apple {
+    background-image: url("../img/logo-apple.svg");
+    background-size: 46px 60px;
+    background-position: 0% 80%;
+  }
+
+  &--android {
+    background-image: url("../img/logo-android.svg");
+    background-size: 43px 50px;
+    background-position: 13% 70%;
+  }
+
+  &--windows {
+    background-image: url("../img/logo-microsoft.svg");
+    background-size: 66px 41px;
+    background-position: 50% 70%;
+  }
 }
 
 @media (min-width: @tablet-width) {

@@ -1,0 +1,46 @@
+.slider__switcher {
+  display: none;
+}
+
+.slider__toggle {
+  margin: 0;
+  padding: 0;
+  margin-top: 29px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 6px;
+  height: 6px;
+  margin-right: 20px;
+  background-color: #bec2c7;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#price-radio-1:checked~.slider__toggles label[for=price-radio-1],
+#price-radio-2:checked~.slider__toggles label[for=price-radio-2],
+#price-radio-3:checked~.slider__toggles label[for=price-radio-3] {
+  background-color: #fff;
+  border: 3px solid #283645;
+}
+
+#price-radio-2:checked~.prices__list {
+  transform: translateX(0);
+  transition: .5s;
+}
+
+#price-radio-1:checked~.prices__list {
+  transform: translateX(280px);
+  transition: .5s;
+}
+
+#price-radio-3:checked~.prices__list {
+  transform: translateX(-280px);
+  transition: .5s;
+}
+
+#review-radio-1:checked~.slider__toggles label[for=review-radio-1],
+#review-radio-2:checked~.slider__toggles label[for=review-radio-2],
+#review-radio-3:checked~.slider__toggles label[for=review-radio-3] {
+  background-color: #fff;
+  border: 3px solid #283645;
+}
