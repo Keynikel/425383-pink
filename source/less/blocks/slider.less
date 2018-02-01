@@ -14,31 +14,31 @@
   cursor: pointer;
 }
 
-#price-radio-1:checked~.slider__toggles label[for=price-radio-1],
-#price-radio-2:checked~.slider__toggles label[for=price-radio-2],
-#price-radio-3:checked~.slider__toggles label[for=price-radio-3] {
-  background-color: #fff;
+.slider__switcher--price-1:checked ~ .slider__toggles label[for="price-radio-1"],
+.slider__switcher--price-2:checked ~ .slider__toggles label[for="price-radio-2"],
+.slider__switcher--price-3:checked ~ .slider__toggles label[for="price-radio-3"] {
+  background-color: #ffffff;
   border: 3px solid #283645;
 }
 
-#price-radio-2:checked~.prices__list {
+.slider__switcher--price-2:checked ~ .prices__list {
   transform: translateX(0);
-  transition: .5s;
+  transition: 0.5s;
 }
 
-#price-radio-1:checked~.prices__list {
+.slider__switcher--price-1:checked ~ .prices__list {
   transform: translateX(280px);
-  transition: .5s;
+  transition: 0.5s;
 }
 
-#price-radio-3:checked~.prices__list {
+.slider__switcher--price-3:checked ~ .prices__list {
   transform: translateX(-280px);
-  transition: .5s;
+  transition: 0.5s;
 }
 
-#review-radio-1:checked~.slider__toggles label[for=review-radio-1],
-#review-radio-2:checked~.slider__toggles label[for=review-radio-2],
-#review-radio-3:checked~.slider__toggles label[for=review-radio-3] {
-  background-color: #fff;
+.slider__switcher--review-1:checked ~ .slider__toggles label[for="review-radio-1"],
+.slider__switcher--review-2:checked ~ .slider__toggles label[for="review-radio-2"],
+.slider__switcher--review-3:checked ~ .slider__toggles label[for="review-radio-3"] {
+  background-color: #ffffff;
   border: 3px solid #283645;
 }
