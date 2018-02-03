@@ -80,10 +80,12 @@
 
 @media (min-width: @desktop-width) {
   .advantages-list__wrapper {
+    padding-top: 357px;
+    min-width: 870px;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: space-between;
   }
 
   .advantages-list {
@@ -92,7 +94,13 @@
     }
   }
 
+  .advantages-list__item {
+    min-width: 240px;
+    text-align: center;
+  }
+
   .advantages-list__title {
+    padding-bottom: 24px;
     font-weight: bold;
     font-size: 30px;
     line-height: 30px;
