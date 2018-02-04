@@ -8,13 +8,13 @@
 }
 
 .editor__tools {
-  margin: 0;
+  max-width: 214px;
+  margin: auto;
   padding: 0;
   list-style: none;
   display: flex;
-  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   padding-bottom: 25px;
   border-bottom: 1px solid @gray;
 }
@@ -24,11 +24,16 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 40px;
+  padding-top: 86px;
 }
 
 .editor__post {
   margin-bottom: 10px;
+}
+
+.editor__bar {
+  width: 45px;
+  height: 45px;
 }
 
 @media (min-width: @tablet-width) {
