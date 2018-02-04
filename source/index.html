@@ -7,14 +7,32 @@
   </head>
   <body>
     <header class="page-header page-header--index">
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--opened">
           <div class="main-nav__main-wrapper">
             <div class="main-nav__logo-wrapper">
               <a class="logo logo--header" href="index.html">
                 <img class="" src="img/logo-pink-white-mobile.svg" width="75" height="25" alt="Pink">
               </a>
-              <button class="main-nav__toggle" type="button">
-                Открыть меню
+              <button class="main-nav__toggle main-nav__toggle--open" type="button">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="49.945px" height="24.007px" viewBox="0 0 49.945 24.007" enable-background="new 0 0 49.945 24.007" xml:space="preserve">
+                  <g id="miu">
+                    <g id="editor_list_view_hambuger_menu_glyph">
+                      <g>
+                        <path id="path-1" fill="#FFFFFF" d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z"/>
+                      </g>
+                      <g>
+                        <path id="path-1_1_" fill="#FFFFFF" d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z"/>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+                <span class="visually-hidden">Открыть меню</span>
+              </button>
+              <button class="main-nav__toggle main-nav__toggle--close" type="button">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
+                  <path fill="#FFFFFF" d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"/>
+                </svg>
+                <span class="visually-hidden">Закрыть меню</span>
               </button>
             </div>
             <div class="main-nav__wrapper">
@@ -37,18 +55,25 @@
         </nav>
         <div class="page-header__wrapper page-header__wrapper--index">
           <section class="intro intro--index">
+            <h1 class="intro__header intro__header--index">Взгляните на жизнь иначе!</h1>
             <section class="intro__download">
-              <h1 class="intro__header intro__header--index">Взгляните на жизнь иначе!</h1>
-              <a class="intro__link button">Скачать приложение</a>
+              <h2 class="visually-hidden">Скачать приложение</h2>
+              <a class="intro__download-button button">Скачать приложение</a>
               <ul class="intro__platforms">
                 <li class="intro__platform">
-                  <a href="#" aria-label="Скачать для Apple">Apple</a>
+                  <a class="intro__link intro__link--apple" href="#" aria-label="Скачать для Apple">
+                    <span class="visually-hidden">Apple</span>
+                  </a>
                 </li>
                 <li class="intro__platform">
-                  <a href="#" aria-label="Скачать для Android">Android</a>
+                  <a class="intro__link intro__link--android" href="#" aria-label="Скачать для Android">
+                    <span class="visually-hidden">Android</span>
+                  </a>
                 </li>
                 <li class="intro__platform">
-                  <a href="#" aria-label="Скачать для Windods">Windows</a>
+                  <a class="intro__link intro__link--windows" href="#" aria-label="Скачать для Windods">
+                    <span class="visually-hidden">Windows</span>
+                  </a>
                 </li>
               </ul>
               <p class="intro__description">
@@ -60,12 +85,14 @@
       </header>
     <main class="page-main">
       <section class="information">
-        <h2 class="information__slogan">
-          Устали от серости мегаполиса?
-        </h2>
-        <h2 class="information__slogan information__slogan--small">
-          Нам есть, что вам предложить!
-        </h2>
+        <div class="information__wrapper">
+          <h2 class="information__slogan">
+            Устали от серости мегаполиса?
+          </h2>
+          <h2 class="information__slogan information__slogan--small">
+            Нам есть, что вам предложить!
+          </h2>
+        </div>
         <div class="information__items">
           <ul class="information__advantages advantages-list">
             <div class="advantages-list__wrapper">
@@ -110,11 +137,14 @@
       <section class="reviews">
         <div class="reviews__wrapper slider">
           <h2 class="visually-hidden">Отзывы</h2>
+          <input class="slider__switcher slider__switcher--review-1" type="radio" name="rewiew" id="review-radio-1" checked>
+          <input class="slider__switcher slider__switcher--review-2" type="radio" name="rewiew" id="review-radio-2">
+          <input class="slider__switcher slider__switcher--review-3" type="radio" name="rewiew" id="review-radio-3">
           <div class="reviews__list slider__list">
             <blockquote class="reviews__item slider__item">
               <cite class="reviews__author">
-                <p class="reviews__name">Николай Петров</p>
-                <p class="reviews__info">25 лет, водитель трамвая</p>
+                <span class="reviews__name">Николай Петров</span>
+                <span class="reviews__info">25 лет, водитель трамвая</span>
               </cite>
               <p class="reviews__text">
                 «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
@@ -122,61 +152,52 @@
             </blockquote>
           </div>
           <p class="reviews__toggles slider__toggles">
-            <button class="slider__toggle slider__toggle--active" type="button">
-              1
-            </button>
-            <button class="slider__toggle" type="button">
-              2
-            </button>
-            <button class="slider__toggle" type="button">
-              3
-            </button>
+            <label class="slider__toggle" for="review-radio-1"></label>
+            <label class="slider__toggle" for="review-radio-2"></label>
+            <label class="slider__toggle" for="review-radio-3"></label>
           </p>
         </div>
       </section>
       <section class="prices">
         <div class="prices__wrapper slider">
             <h2 class="visually-hidden">Расценки</h2>
+            <input class="slider__switcher slider__switcher--price-1" type="radio" name="price" id="price-radio-1">
+            <input class="slider__switcher slider__switcher--price-2" type="radio" name="price" id="price-radio-2" checked>
+            <input class="slider__switcher slider__switcher--price-3" type="radio" name="price" id="price-radio-3">
             <table class="prices__list">
-            <thead class="prices__list-head">
-              <tr>
-                <th class="prices__value prices__value--empty"></th>
-                <th class="prices__value">База<p>1,99 USD</p></th>
-                <th class="prices__value prices__value--flag">Стандарт<p>3,99 USD</p></th>
-                <th class="prices__value">Анлим<p>9,99 USD</p></th>
-              </tr>
-            </thead>
-            <tbody class="prices__list-body">
-              <tr>
-                <td class="prices__field prices__field--empty">Розовый фильтр</td>
-                <td class="prices__field prices__field--ok">Розовый фильтр</td>
-                <td class="prices__field prices__field--ok">Розовый фильтр</td>
-                <td class="prices__field prices__field--ok">Розовый фильтр</td>
-              </tr>
-              <tr>
-                <td class="prices__field prices__field--empty">Смайлики</td>
-                <td class="prices__field prices__field--cancel">Смайлики</td>
-                <td class="prices__field prices__field--ok">Смайлики</td>
-                <td class="prices__field prices__field--ok">Смайлики</td>
-              </tr>
-              <tr>
-                <td class="prices__field prices__field--empty">Комментарии</td>
-                <td class="prices__field prices__field--cancel">Комментарии</td>
-                <td class="prices__field prices__field--cancel">Комментарии</td>
-                <td class="prices__field prices__field--ok">Комментарии</td>
-              </tr>
-            </tbody>
-          </table>
+              <thead class="prices__list-head">
+                <tr>
+                  <th class="prices__value prices__value--empty"></th>
+                  <th class="prices__value">База<p>1,99 USD</p></th>
+                  <th class="prices__value prices__value--flag">Стандарт<p>3,99 USD</p></th>
+                  <th class="prices__value">Анлим<p>9,99 USD</p></th>
+                </tr>
+              </thead>
+              <tbody class="prices__list-body">
+                <tr>
+                  <td class="prices__field prices__field--empty">Розовый фильтр</td>
+                  <td class="prices__field prices__field--ok"><span>Розовый фильтр</span></td>
+                  <td class="prices__field prices__field--ok"><span>Розовый фильтр</span></td>
+                  <td class="prices__field prices__field--ok"><span>Розовый фильтр</span></td>
+                </tr>
+                <tr>
+                  <td class="prices__field prices__field--empty">Смайлики</td>
+                  <td class="prices__field prices__field--cancel"><span>Смайлики</span></td>
+                  <td class="prices__field prices__field--ok"><span>Смайлики</span></td>
+                  <td class="prices__field prices__field--ok"><span>Смайлики</span></td>
+                </tr>
+                <tr>
+                  <td class="prices__field prices__field--empty">Комментарии</td>
+                  <td class="prices__field prices__field--cancel"><span>Комментарии</span></td>
+                  <td class="prices__field prices__field--cancel"><span>Комментарии</span></td>
+                  <td class="prices__field prices__field--ok"><span>Комментарии</span></td>
+                </tr>
+              </tbody>
+            </table>
             <p class="prices__toggles slider__toggles">
-              <button class="slider__toggle slider__toggle--active" type="button">
-                1
-              </button>
-              <button class="slider__toggle" type="button">
-                2
-              </button>
-              <button class="slider__toggle" type="button">
-                3
-              </button>
+              <label class="slider__toggle" for="price-radio-1"></label>
+              <label class="slider__toggle" for="price-radio-2"></label>
+              <label class="slider__toggle" for="price-radio-3"></label>
             </p>
         </div>
       </section>
@@ -213,7 +234,7 @@
           </ul>
         </div>
         <div class="contacts__map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6980590770752!2d30.32163490591493!3d59.937152280213105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1517248568224" width="1200" height="500" allowfullscreen></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6980590770752!2d30.32163490591493!3d59.937152280213105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1517248568224" width="320" height="500"></iframe>
         </div>
       </section>
     </main>
@@ -223,21 +244,60 @@
           <img class="page-footer__logo-image" width="145" height="50" src="img/logo-pink-blue-mobile.svg" alt="Логотип Pink">
         </a>
         <ul class="page-footer__socials">
-          <li class="page-footer__twitter">
-            <a href="#" aria-label="Twitter">Twitter</a>
+          <li class="page-footer__social page-footer__social--twitter">
+            <a class="page-footer__social-href" href="#" aria-label="Twitter">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
+                <g id="W6EeEF_1_">
+                  <g>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.283,0.153c1.736-0.485,3.074,0.263,3.685,1.151 c0.694-0.226,1.372-0.47,2.072-0.691c-0.004,0.841-0.538,1.478-0.883,1.727C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.976-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.32,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.654,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.787,11.283,0.153z"/>
+                  </g>
+                </g>
+              </svg>
+              <span class="visually-hidden">Twitter</span>
+            </a>
           </li>
-          <li class="page-footer__facebook">
-            <a href="#" aria-label="Facebook">Facebook</a>
+          <li class="page-footer__social page-footer__social--facebook">
+            <a class="page-footer__social-href" href="#" aria-label="Facebook">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.673px" height="18.944px" viewBox="0 0 8.673 18.944" enable-background="new 0 0 8.673 18.944" xml:space="preserve">
+                <path d="M6.275,3.357c0.799,0,1.599,0,2.398,0c0-1.119,0-2.238,0-3.357c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.115 H0v3.517h1.958c0,3.104,0,6.208,0,9.312c1.279,0,2.558,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.115H5.786 C5.765,5.07,5.75,3.709,6.275,3.357z"/>
+              </svg>
+              <span class="visually-hidden">Facebook</span>
+            </a>
           </li>
-          <li class="page-footer__youtube">
-            <a href="#" aria-label="Youtube">Youtube</a>
+          <li class="page-footer__social page-footer__social--youtube">
+            <a class="page-footer__social-href" href="#" aria-label="Youtube">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14.64px" height="13.96px" viewBox="0 0 14.64 13.96" enable-background="new 0 0 14.64 13.96" xml:space="preserve">
+                <path d="M1.775,13.78C0.799,14.257,0,13.758,0,12.671V1.29c0-1.088,0.799-1.585,1.775-1.109l12.133,5.932 c0.975,0.478,0.975,1.258,0,1.736L1.775,13.78z"/>
+              </svg>
+              <span class="visually-hidden">Youtube</span>
+            </a>
           </li>
         </ul>
         <div class="page-footer__copyrights copyright">
-          <b class="copyright__text"> Разработано</b>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">HTML Academy</a>
+          <span class="copyright__text"> Разработано</span>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="visually-hidden">HTML Academy</span>
+            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
+              <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.472,8.017l13.43-7.99l0.042-0.026V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 l-0.001-0.104L13.407,5.28l-0.088-0.056v0.109L1.925,12.118V3.147l11.547-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.013,1.415l5.904,3.513l-0.86,0.507l-5.031-2.992l-0.013,1.415l3.827,2.275l-0.782,0.523l-3.032-1.787 l-0.013,1.413l1.852,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.015,1.044l-7.941-4.728L5.395,19.65 l7.979,4.796l0.017,1.076l-7.972-4.741l-0.013,1.415l8.021,4.821l0.045,0.026l8.143-4.872v-1.268l-0.011-0.148v-3.761l3.415-2.036 v10.02L13.472,31.85L1.925,24.979V15.127z"/>
+            </svg>
+          </a>
         </div>
       </div>
     </footer>
+    <script>
+      var navMain = document.querySelector('.main-nav');
+      var navToggle = document.querySelector('.main-nav__toggle');
+
+      navMain.classList.remove('main-nav--nojs');
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('main-nav--closed')) {
+          navMain.classList.remove('main-nav--closed');
+          navMain.classList.add('main-nav--opened');
+        } else {
+          navMain.classList.add('main-nav--closed');
+          navMain.classList.remove('main-nav--opened');
+        }
+      });
+    </script>
   </body>
 </html>

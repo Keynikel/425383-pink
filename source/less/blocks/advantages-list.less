@@ -15,7 +15,8 @@
   &::after {
     content: "";
     width: 155px;
-    height: 320px;
+    height: 278px;
+    margin-top: 10px;
     background-image: url("../img/iphone-screen-mobile@1x.png");
     background-size: 155px 320px;
     background-position: top center;
@@ -25,13 +26,14 @@
 
 .advantages-list__item {
   text-align: center;
-  width: 280px;
+  width: 265px;
+  padding-bottom: 30px;
 }
 
 .advantages-list__title {
   margin: 0;
   padding: 0;
-  padding-bottom: 25px;
+  padding-bottom: 13px;
   font-weight: bold;
   font-size: 18px;
   line-height: 24px;
@@ -40,7 +42,6 @@
 .advantages-list__description {
   margin: 0;
   padding: 0;
-  padding-bottom: 40px;
   font-size: 14px;
   line-height: 24px;
   color: #283645;
@@ -54,15 +55,17 @@
 
     &::after {
       order: 1;
-      width: 300px;
-      height: 545px;
-      background-size: 256px 545px;
+      margin-top: 5px;
+      width: 306px;
+      height: 485px;
+      background-size: 263px 547px;
+      background-position: 0 0;
     }
   }
 
   .advantages-list__wrapper {
     order: 2;
-    padding-top: 50px;
+    padding-top: 67px;
   }
 
   .advantages-list__item {
@@ -77,10 +80,12 @@
 
 @media (min-width: @desktop-width) {
   .advantages-list__wrapper {
+    padding-top: 357px;
+    min-width: 870px;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: space-between;
   }
 
   .advantages-list {
@@ -89,7 +94,13 @@
     }
   }
 
+  .advantages-list__item {
+    min-width: 240px;
+    text-align: center;
+  }
+
   .advantages-list__title {
+    padding-bottom: 24px;
     font-weight: bold;
     font-size: 30px;
     line-height: 30px;
