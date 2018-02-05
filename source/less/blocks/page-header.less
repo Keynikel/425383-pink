@@ -67,10 +67,20 @@
 }
 
 @media (min-width: @desktop-width) {
+  .page-header {
+    &--photo {
+      min-height: 380px;
+    }
+  }
+
   .page-header__wrapper {
+    min-height: 284px;
     width: 960px;
-    min-height: 674px;
     margin: 0 auto;
+
+    &--index {
+      min-height: 674px;
+    }
 
     &--index::before {
       bottom: 0;

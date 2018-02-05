@@ -85,6 +85,7 @@
 @media (min-width: @tablet-width) {
   .intro {
     background-color: transparent;
+    min-height: 330px;
 
     &--index {
       width: 300px;
@@ -105,14 +106,20 @@
 
   .intro__header {
     display: block;
-    width: 245px;
+    width: 356px;
     text-align: center;
-    font-size: 40px;
-    line-height: 44px;
+    font-size: 50px;
+    line-height: 57px;
     font-weight: lighter;
 
     &--index {
-      display: block;
+      width: 245px;
+      font-size: 40px;
+      line-height: 44px;
+    }
+
+    &--photo {
+      margin: 72px auto;
     }
   }
 
@@ -131,6 +138,8 @@
 
 @media (min-width: @desktop-width) {
   .intro {
+    min-height: 281px;
+
     &--index {
       margin: 0 17px;
       width: 303px;
@@ -144,6 +153,10 @@
   .intro__header {
     font-size: 50px;
     line-height: 59px;
+
+    &--photo {
+      margin-top: 65px;
+    }
   }
 
   .intro__download-button {
