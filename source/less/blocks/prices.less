@@ -1,7 +1,7 @@
 .prices {
   padding: 0;
-  padding-top: 98px;
-  padding-bottom: 19px;
+  padding-top: 94px;
+  padding-bottom: 42px;
   background-color: @light-gray;
   background-image: url("../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
@@ -55,6 +55,7 @@
 }
 
 .prices__field {
+  position: relative;
   box-sizing: border-box;
   padding-top: 16px;
   padding-bottom: 13px;
@@ -73,6 +74,29 @@
     line-height: 0;
     background-color: transparent;
     border: none;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 30px 32px;
+  }
+
+  &--ok::after {
+    background-image: url("../img/icon-yes.svg");
+    background-position: 23px 13px;
+  }
+
+  &--no::after {
+    background-image: url("../img/icon-no.svg");
+    background-position: 24px 8px;
+    background-size: 27px 30px;
   }
 }
 
@@ -146,6 +170,6 @@
   }
 
   .prices__wrapper {
-    padding-top: 60px;
+    padding-top: 71px;
   }
 }

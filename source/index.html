@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
   </head>
   <body>
     <header class="page-header page-header--index">
@@ -11,7 +13,11 @@
           <div class="main-nav__main-wrapper">
             <div class="main-nav__logo-wrapper">
               <a class="logo logo--header" href="index.html">
-                <img class="" src="img/logo-pink-white-mobile.svg" width="75" height="25" alt="Pink">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+                  <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+                  <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="25" alt="Pink">
+                </picture>
               </a>
               <button class="main-nav__toggle main-nav__toggle--open" type="button">
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="49.945px" height="24.007px" viewBox="0 0 49.945 24.007" enable-background="new 0 0 49.945 24.007" xml:space="preserve">
@@ -96,7 +102,7 @@
         <div class="information__items">
           <ul class="information__advantages advantages-list">
             <div class="advantages-list__wrapper">
-              <li class="advantages-list__item">
+              <li class="advantages-list__item advantages-list__item--first">
                 <h3 class="advantages-list__title">
                   Поднимает настроение
                 </h3>
@@ -104,7 +110,7 @@
                   Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
                 </p>
               </li>
-              <li class="advantages-list__item">
+              <li class="advantages-list__item advantages-list__item--second">
                 <h3 class="advantages-list__title">
                   Меняет мир вокруг
                 </h3>
@@ -112,7 +118,7 @@
                   Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
                 </p>
               </li>
-              <li class="advantages-list__item">
+              <li class="advantages-list__item advantages-list__item--third">
                 <h3 class="advantages-list__title">
                   Заводит новых друзей
                 </h3>
@@ -151,6 +157,18 @@
               </p>
             </blockquote>
           </div>
+          <button class="reviews__switch reviews__switch--prev" type="button">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.706px" height="41.719px" viewBox="0 0 21.706 41.719" enable-background="new 0 0 21.706 41.719" xml:space="preserve">
+              <path d="M2.045,20.859L21.458,1.446c0.331-0.331,0.331-0.867,0-1.198c-0.33-0.331-0.867-0.331-1.197,0L0.248,20.261 c-0.331,0.33-0.331,0.867,0,1.197l20.013,20.013c0.164,0.165,0.382,0.248,0.599,0.248s0.434-0.083,0.599-0.248 c0.331-0.331,0.331-0.867,0-1.198L2.045,20.859z"/>
+            </svg>
+            <span class="visually-hidden">Предыдущий отзыв</span>
+          </button>
+          <button class="reviews__switch reviews__switch--next" type="button">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.706px" height="41.719px" viewBox="0 0 21.706 41.719" enable-background="new 0 0 21.706 41.719" xml:space="preserve">
+              <path d="M19.661,20.859L0.248,1.446c-0.331-0.331-0.331-0.867,0-1.198c0.33-0.331,0.867-0.331,1.197,0l20.013,20.012 c0.33,0.33,0.33,0.867,0,1.197L1.445,41.471c-0.164,0.165-0.382,0.248-0.599,0.248s-0.434-0.083-0.599-0.248 c-0.331-0.331-0.331-0.867,0-1.198L19.661,20.859z"/>
+            </svg>
+            <span class="visually-hidden">Следующий отзыв</span>
+          </button>
           <p class="reviews__toggles slider__toggles">
             <label class="slider__toggle" for="review-radio-1"></label>
             <label class="slider__toggle" for="review-radio-2"></label>
@@ -169,7 +187,7 @@
                 <tr>
                   <th class="prices__value prices__value--empty"></th>
                   <th class="prices__value">База<p>1,99 USD</p></th>
-                  <th class="prices__value prices__value--flag">Стандарт<p>3,99 USD</p></th>
+                  <th class="prices__value prices__value--hit">Стандарт<p>3,99 USD</p></th>
                   <th class="prices__value">Анлим<p>9,99 USD</p></th>
                 </tr>
               </thead>
@@ -182,14 +200,14 @@
                 </tr>
                 <tr>
                   <td class="prices__field prices__field--empty">Смайлики</td>
-                  <td class="prices__field prices__field--cancel"><span>Смайлики</span></td>
+                  <td class="prices__field prices__field--no"><span>Смайлики</span></td>
                   <td class="prices__field prices__field--ok"><span>Смайлики</span></td>
                   <td class="prices__field prices__field--ok"><span>Смайлики</span></td>
                 </tr>
                 <tr>
                   <td class="prices__field prices__field--empty">Комментарии</td>
-                  <td class="prices__field prices__field--cancel"><span>Комментарии</span></td>
-                  <td class="prices__field prices__field--cancel"><span>Комментарии</span></td>
+                  <td class="prices__field prices__field--no"><span>Комментарии</span></td>
+                  <td class="prices__field prices__field--no"><span>Комментарии</span></td>
                   <td class="prices__field prices__field--ok"><span>Комментарии</span></td>
                 </tr>
               </tbody>
@@ -284,20 +302,5 @@
         </div>
       </div>
     </footer>
-    <script>
-      var navMain = document.querySelector('.main-nav');
-      var navToggle = document.querySelector('.main-nav__toggle');
-
-      navMain.classList.remove('main-nav--nojs');
-      navToggle.addEventListener('click', function() {
-        if (navMain.classList.contains('main-nav--closed')) {
-          navMain.classList.remove('main-nav--closed');
-          navMain.classList.add('main-nav--opened');
-        } else {
-          navMain.classList.add('main-nav--closed');
-          navMain.classList.remove('main-nav--opened');
-        }
-      });
-    </script>
   </body>
 </html>

@@ -4,6 +4,7 @@
 
 .slider__toggle {
   margin: 0;
+  margin-right: 20px;
   padding: 0;
   display: inline-block;
   vertical-align: middle;
@@ -36,7 +37,9 @@
     transform: translateX(-280px);
     transition: 0.5s;
   }
+}
 
+@media (max-width: @without-table) {
   .slider__switcher--review-1:checked ~ .slider__toggles label[for="review-radio-1"],
   .slider__switcher--review-2:checked ~ .slider__toggles label[for="review-radio-2"],
   .slider__switcher--review-3:checked ~ .slider__toggles label[for="review-radio-3"] {
@@ -44,8 +47,6 @@
     border: 3px solid #283645;
   }
 }
-
-
 
 @media (min-width: @desktop-width) {
   .slider__toggles {
