@@ -65,6 +65,7 @@
         <p class="competition__slogan">
           Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
         </p>
+        <p class="competition__slogan competition__slogan--hidden">Пожалуйста, заполните форму ниже:</p>
         <form class="competition__form" name="competition__form" method="post" action="https://echo.htmlacademy.ru">
           <div class="competition__wrapper competition__personal-data">
             <fieldset class="competition__fields">
@@ -117,8 +118,8 @@
             </fieldset>
           </div>
           <div class="competition__wrapper competition__contacts-data">
-            <fieldset class="competition__fields">
-              <legend class="visually-hidden">Контактные данные</legend>
+            <fieldset class="competition__fields competition__fields--contacts">
+              <legend class="competition__legend competition__legend--hidden">Контактные данные</legend>
               <p class="competition__field">
                 <label class="competition__label" for="phone">Номер телефона</label>
                 <input class="competition__input" type="tel" id="phone" name="phone" placeholder="Номер, пожалуйста">
