@@ -120,14 +120,16 @@
           <div class="competition__wrapper competition__contacts-data">
             <fieldset class="competition__fields competition__fields--contacts">
               <legend class="competition__legend competition__legend--hidden">Контактные данные</legend>
-              <p class="competition__field">
-                <label class="competition__label" for="phone">Номер телефона</label>
-                <input class="competition__input" type="tel" id="phone" name="phone" placeholder="Номер, пожалуйста">
-              </p>
-              <p class="competition__field">
-                <label class="competition__label" for="mail">Адрес почты</label>
-                <input class="competition__input" type="email" id="mail" name="mail" placeholder="Введите почту *">
-              </p>
+              <div class="competition-wrapper--for-fields">
+                <p class="competition__field">
+                  <label class="competition__label" for="phone">Номер телефона</label>
+                  <input class="competition__input competition__input--phone" type="tel" id="phone" name="phone" placeholder="Номер, пожалуйста">
+                </p>
+                <p class="competition__field">
+                  <label class="competition__label" for="mail">Адрес почты</label>
+                  <input class="competition__input competition__input--email" type="email" id="mail" name="mail" placeholder="Введите почту *">
+                </p>
+              </div>
             </fieldset>
           </div>
           <div class="competition__wrapper competition__application-data">
