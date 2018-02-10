@@ -57,10 +57,20 @@
   width: 100%;
   padding: 19px;
   border: 2px solid #e5e5e5;
+
+  &:hover {
+    border-color: @midnight;
+  }
+
+  &:focus {
+    border-color: @pink;
+  }
 }
 
 .competition__legend {
   padding-bottom: 20px;
+  min-width: 100%;
+    text-align: center;
   font-size: 14px;
   line-height: 18px;
   color: @pink;
@@ -69,7 +79,6 @@
 
   &--padded {
     padding-top: 37px;
-    max-width: 213px;
     margin: 0 auto;
   }
 
@@ -98,6 +107,14 @@
     width: 35px;
     height: 34px;
     border: 2px solid @gray;
+  }
+
+  &:hover + label:before {
+    border-color: @midnight
+  }
+
+  &:active + label:before {
+    border-color: @pink;
   }
 
   &:checked + label::after {
@@ -153,6 +170,15 @@
     border-radius: 50%;
   }
 
+  &:hover + label::before {
+    border-color: @midnight;
+  }
+
+  &:focus + label::before,
+  &:active + label::before {
+    border-color: @pink;
+  }
+
   &:checked + label::after {
     content: "";
     position: absolute;
@@ -199,6 +225,15 @@
   font-weight: bold;
   color: @white;
   text-transform: uppercase;
+
+  &:hover {
+    background-color: #1c9b5e;
+    border-color: #1c9b5e;
+  }
+
+  &:focus {
+    color: fade(@white, 30);
+  }
 }
 
 .competition__additional {
@@ -212,6 +247,10 @@
 
   &--important {
     color: @pink;
+  }
+
+  &--hidden {
+    display: none;
   }
 }
 
@@ -267,6 +306,7 @@
     padding-left: 25px;
     padding-right: 25px;
     max-width: 460px;
+    min-width: 300px;
 
     &--hidden {
       display: block;
@@ -386,11 +426,10 @@
     order: 6;
     display: flex;
     align-items: center;
-    margin-top: 67px;
+    margin: 67px auto;
   }
 
   .competition__submit {
-    margin-left: 20px;
     margin-right: 140px;
     padding: 14px 55px;
   }
@@ -401,6 +440,15 @@
 }
 
 @media (min-width: @desktop-width) {
+
+  .competition__additional {
+    margin-right: 23px;
+
+    &--hidden {
+      display: inline;
+      vertical-align: top;
+    }
+  }
   .competition__achieve-fields,
   .competition__application-data {
     background-color: @white;
@@ -422,7 +470,7 @@
       flex-wrap: wrap;
       padding-top: 25px;
       margin-left: 57px;
-      margin-right: 57px;
+      margin-right: 0px;
       margin-bottom: 6px;
     }
 
@@ -525,6 +573,13 @@
   .competition__input {
     width: auto;
     flex-grow: 1;
+
+    &--phone::before {
+      content: "";
+      width: 60px;
+      height: 60px;
+      background-color: @gray;
+    }
   }
 
   .competition__emotion-description {
@@ -541,13 +596,44 @@
     }
   }
 
+  .competition__achievements {
+    width: 260px;
+
+    &--selfie {
+      order: 1;
+      padding-right: 56px;
+    }
+
+    &--chuck {
+      order: 2;
+      padding-right: 36px;
+    }
+    &--holder {
+      order: 3;
+    }
+
+    &--burned {
+      order: 4;
+      padding-right: 56px;
+    }
+
+    &--buyer {
+      order: 5;
+      padding-right: 36px;
+    }
+
+    &--destroyer {
+      order: 6;
+    }
+  }
+
   .competition__buttons {
     margin-top: 66px;
     justify-content: space-between;
   }
 
   .competition__submit {
-    margin-left: 10px;
+    margin-left: 7px;
     margin-right: 0px;
   }
 }
