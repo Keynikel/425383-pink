@@ -347,9 +347,30 @@
     }
 
     .competition__field {
+      position: relative;
       margin-top: 0;
       margin-bottom: 24px;
       flex-direction: column;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 2px;
+        right: 62px;
+        width: 62px;
+        height: 58px;
+        background-color: @gray;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      &--phone::after {
+        background-image: url("../img/icon-phone.svg");
+      }
+
+      &--email::after {
+        background-image: url("../img/icon-mail.svg");
+      }
     }
 
     .competition__legend {
@@ -365,16 +386,6 @@
     .competition__input {
       margin: 0 auto;
       width: 500px;
-
-      &::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 60px;
-        height: 60px;
-        background-color: @gray;
-      }
     }
   }
 
@@ -538,6 +549,11 @@
     .competition__field {
       padding-left: 60px;
       margin-bottom: 7px;
+
+      &::after {
+        top: 2px;
+        right: 2px;
+      }
     }
 
     .competition__input {
