@@ -5,6 +5,10 @@
 }
 
 .photos__photo {
+  display: block;
+  width: 280px;
+  height: 180px;
+
   &--top {
     width: 100%;
     height: auto;
@@ -16,19 +20,39 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-bottom: 15px;
+  padding-bottom: 20px;
 
   &--top {
+    position: relative;
+
     picture {
       width: 100%;
       height: auto;
     }
   }
+
+  &--top::after {
+    content: "Панорама дня";
+    position: absolute;
+    top: 0;
+    right: 20px;
+    padding-top: 6px;
+    padding-left: 19px;
+    padding-right: 11px;
+    width: 110px;
+    height: 29px;
+    background-color: #d22856;
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
 }
 
 .photos__description {
   width: 250px;
-  padding: 20px 15px;
+  padding: 15px 15px 20px;
   background-color: @light-gray;
 }
 
@@ -78,7 +102,7 @@
 
 .photos__slogan {
   margin: 0;
-  padding: 45px 20px 47px;
+  padding: 45px 20px 49px;
   font-size: 14px;
   line-height: 30px;
   color: @midnight;
@@ -100,7 +124,7 @@
     line-height: 30px;
 
     &--second {
-      padding-top: 17px;
+      padding-top: 53px;
       padding-bottom: 70px;
     }
   }
@@ -121,6 +145,10 @@
       width: 100%;
       height: 665px;
     }
+
+    &--top::after {
+      top: 57px;
+    }
   }
 
   .photos__photo {
@@ -134,17 +162,27 @@
   }
 
   .photos__description {
-    width: 243px;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    min-height: 111px;
+    flex-wrap: wrap;
+    min-height: auto;
     padding-top: 24px;
-    padding-left: 29px;
-    padding-right: 29px;
+    padding-bottom: 15px;
+    flex-direction: row;
+    align-content: flex-start;
+    min-height: 111px;
 
     &--top {
       width: 590px;
+
+      .photos__text {
+        order: 2;
+      }
+
+      .photos__likes {
+        margin-top: 0;
+        margin-left: auto;
+        order: 1;
+      }
     }
   }
 }
@@ -156,9 +194,15 @@
 
   .photos__item {
     width: 33.3%;
+    padding-bottom: 50px;
 
     &--top {
       width: 100%;
+      height: 100%;
+    }
+
+    &--top::after {
+      right: 130px;
     }
   }
 
@@ -173,8 +217,16 @@
   }
 
   .photos__description {
+    min-height: 129px;
     &--top {
       width: 885px;
+      display: flex;
+      flex-wrap: wrap;
+      min-height: auto;
+      padding-top: 24px;
+      padding-bottom: 24px;
+      flex-direction: row;
+      align-content: flex-start;
     }
   }
 
@@ -183,5 +235,10 @@
     padding-bottom: 85px;
     font-size: 18px;
     line-height: 30px;
+
+    &--second {
+      padding-top: 8px;
+      padding-bottom: 65px;
+    }
   }
 }
