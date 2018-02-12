@@ -326,6 +326,21 @@
     .competition__input {
       margin: 0 auto;
       width: 500px;
+      position: relative;
+
+      &--phone::after {
+        content: "";
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        background-color: @gray;
+        background-image: url(../img/icon-phone.svg);
+        background-repeat: no-repeat;
+        background-size: 20px 19px;
+        background-position: center;
+        top: 1px;
+        right: 2px;
+      }
     }
   }
 
