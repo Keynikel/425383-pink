@@ -29,15 +29,21 @@
 @media (min-width: @tablet-width) {
   .information {
     padding-top: 47px;
-    padding-bottom: 15px;
+    padding-bottom: 2px;
   }
 
   .information__wrapper {
     position: relative;
     display: flex;
+    flex-direction: column;
     padding-left: 20px;
     padding-right: 20px;
     width: auto;
+
+    &--science {
+      flex-direction: row;
+      margin: 0 auto;
+    }
   }
 
   .information__slogan {

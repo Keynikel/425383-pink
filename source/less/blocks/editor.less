@@ -3,11 +3,17 @@
   background-color: @light-gray;
 }
 
+.editor__wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
 .editor__photo {
-  padding: 0 20px 40px 20px;
+  margin-bottom: 40px;
 }
 
 .editor__tools {
+  position: relative;
   max-width: 247px;
   margin: auto;
   padding: 0;
@@ -35,11 +41,24 @@
 
 .editor__scale {
   position: absolute;
-  left: 38px;
+  left: 0;
   width: 241px;
   height: 2px;
   background-color: #283645;
   margin-top: 36px;
+}
+
+.editor__toggle {
+  position: absolute;
+  z-index: 10;
+  cursor: pointer;
+  width: 10px;
+  height: 10px;
+  top: -6px;
+  right: 34px;
+  background-color: #f2f2f2;
+  border: 2px solid @pink;
+  border-radius: 50%;
 }
 
 .editor__buttons {
@@ -60,10 +79,19 @@
 }
 
 @media (min-width: @tablet-width) {
+  .editor {
+    width: 100%;
+    padding-top: 2px;
+    padding-bottom: 0;
+    margin-bottom: 17px;
+  }
+
   .editor__wrapper {
     display: flex;
     flex-direction: row;
-    padding-top: 36px;
+    width: 620px;
+    margin: 0 auto;
+    padding-top: 34px;
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 13px;
@@ -73,9 +101,25 @@
     width: 300px;
     height: 400px;
     padding: 0;
+    padding-top: 18px;
+  }
+
+  .editor__tools {
+    display: block;
+    margin-left: 13px;
+    flex-direction: column;
+    border: none;
   }
 
   .editor__tool {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 275px;
+    padding-top: 26px;
+    padding-bottom: 21px;
+    border-bottom: 1px solid #dddfe0;
+
     &--deactive {
       .editor__scale {
         display: block;
@@ -83,26 +127,42 @@
     }
   }
 
-  .editor__tools {
-    flex-direction: column;
-  }
-
   .editor__instruments {
-    padding-left: 40px;
+    padding-left: 34px;
     max-width: 280px;
   }
 
   .editor__scale {
-    position: relative;
+    left: 52px;
+    top: 37px;
+    width: 203px;
+    margin-top: 0;
+
+    &--bright {
+      top: 35px;
+    }
+  }
+
+  .editor__toggle {
+    right: 42px;
   }
 
   .editor__buttons {
-    padding-left: 5px;
-    padding-top: 29px;
+    width: 284px;
+    padding-top: 40px;
   }
 
   .editor__post {
     margin-bottom: 26px;
+  }
+
+  .editor__bar {
+    width: 25px;
+    height: 25px;
+
+    &--bright {
+      margin-left: 5px;
+    }
   }
 }
 
@@ -110,10 +170,51 @@
   .editor {
     width: 940px;
     margin: 0 auto;
+    margin-bottom: 94px;
+    padding-top: 14px;
   }
 
   .editor__wrapper {
-    padding-top: 38px;
-    padding-left: 80px;
+    width: 940px;
+    padding-top: 27px;
+  }
+
+  .editor__photo {
+    padding-left: 60px;
+  }
+
+  .editor__tools {
+    margin-left: 55px;
+  }
+
+  .editor__tool {
+    padding-top: 15px;
+    padding-bottom: 11px;
+    width: 410px;
+  }
+
+  .editor__scale {
+    left: 93px;
+    top: 35px;
+    width: 288px;
+  }
+
+  .editor__bar {
+    width: 45px;
+    height: 45px;
+  }
+
+  .editor__buttons {
+    width: 410px;
+    margin-left: 55px;
+    padding-top: 120px;
+    padding-left: 0;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .editor__post {
+    margin: 0;
+    margin-right: 40px;
   }
 }
