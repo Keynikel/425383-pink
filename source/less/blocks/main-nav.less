@@ -34,6 +34,15 @@
   }
 }
 
+.main-nav__icon {
+  fill: @white;
+
+  &:hover,
+  &:active {
+    fill: @pink;
+  }
+}
+
 .main-nav--opened .main-nav__toggle--open {
   display: none;
 }
@@ -87,6 +96,7 @@
     flex-direction: row;
     align-items: center;
     width: 1200px;
+    margin: 0 auto;
   }
 
   .main-nav__logo-wrapper {
