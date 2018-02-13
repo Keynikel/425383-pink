@@ -15,6 +15,20 @@
   }
 }
 
+.competition__checkbox + .competition__checks-label .icon-yes {
+    display: none;
+    fill: @pink;
+}
+
+.competition__checkbox:checked + .competition__checks-label .icon-yes {
+    position: absolute;
+    display: block;
+    top: 9px;
+    left: 5px;
+    fill: #d22856;
+    transition: .5s;
+}
+
 .competition__form {
   font: inherit;
   font-size: 18px;
@@ -114,19 +128,6 @@
 
   &:active + label::before {
     border-color: @pink;
-  }
-
-  &:checked + label::after {
-    content: "";
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    width: 24px;
-    height: 24px;
-    background-image: url("../img/icon-yes.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    opacity: 0.8;
   }
 }
 
