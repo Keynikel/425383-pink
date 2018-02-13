@@ -1,0 +1,119 @@
+.modal__form {
+  &--error,
+  &--success {
+    display: none;
+  }
+}
+
+.modal {
+  position: absolute;
+  top: 25%;
+  padding-top: 40px;
+  margin: 0 auto;
+  background-color: @white;
+  box-shadow: 0 25px 15px -25px rgba(0, 0, 0, 0.2);
+}
+
+.modal__header {
+  padding: 0 20px;
+  margin: 0;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.modal__text {
+  padding: 36px 20px;
+  margin: 0;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.modal__btton-wrapper {
+  padding: 0;
+  padding-top: 52px;
+  padding-bottom: 54px;
+  margin: 0;
+  margin: 0 auto;
+  background-color: @light-gray;
+}
+
+.modal__submit {
+  display: block;
+  margin: 0 auto;
+  padding: 14px 44px;
+  min-width: 280px;
+  border: 3px solid #2aab6d;
+  background-color: #2aab6d;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: #1c9b5e;
+    border-color: #1c9b5e;
+  }
+
+  &:focus,
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+}
+
+@media (min-width: @tablet-width) {
+  .modal {
+    box-sizing: border-box;
+    width: 460px;
+    left: 50%;
+    margin-left: -230px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1),
+                -20px 0 30px -15px rgba(0, 0, 0, 0.1),
+                20px 0 30px -15px rgba(0, 0, 0, 0.1),
+                0 20px 30px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .modal__header {
+    margin-left: 80px;
+    margin-right: 80px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .modal__text {
+    padding-top: 30px;
+    padding-bottom: 40px;
+    font-size: 18px;
+  }
+
+  .modal__submit {
+    min-width: 300px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .modal {
+    width: 780px;
+    margin-left: -390px;
+  }
+
+  .modal__header {
+    margin-left: 160px;
+    margin-right: 160px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .modal__text {
+    margin-left: 160px;
+    margin-right: 160px;
+  }
+
+  .modal__submit {
+    min-width: 460px;
+  }
+}
