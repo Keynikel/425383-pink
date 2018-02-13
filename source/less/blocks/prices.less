@@ -154,15 +154,18 @@
 
 @media (min-width: @desktop-width) {
   .prices {
-    padding-bottom: 135px;
-  }
-
-  .prices__list {
-    min-width: 940px;
+    padding-bottom: 96px;
   }
 
   .prices__wrapper {
+    display: block;
     padding-top: 60px;
+  }
+
+  .prices__list {
+    min-width: 950px;
+    margin: 0 auto;
+    padding: 0;
   }
 
   .prices__value {
@@ -172,6 +175,17 @@
     p {
       font-size: 24px;
       line-height: 31px;
+    }
+  }
+
+  .prices__field {
+    background-position: 105px 6px;
+
+    &--empty {
+      width: 233px;
+      padding: 13px 0 13px 24px;
+      font-size: 18px;
+      line-height: 30px;
     }
   }
 }

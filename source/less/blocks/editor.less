@@ -42,10 +42,10 @@
 .editor__scale {
   position: absolute;
   left: 0;
+  top: 82px;
   width: 241px;
   height: 2px;
   background-color: #283645;
-  margin-top: 36px;
 }
 
 .editor__toggle {
@@ -74,8 +74,25 @@
 }
 
 .editor__bar {
-  width: 45px;
-  height: 45px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 17px;
+  margin-left: 17px;
+  padding-bottom: 76px;
+  width: 48px;
+  height: 44px;
+}
+
+.editor__item {
+  fill: #b5b9be;
+
+  &--active {
+    fill: @pink;
+  }
+
+  &:hover {
+    fill: #8d949b;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -116,8 +133,8 @@
     display: flex;
     align-items: center;
     width: 275px;
-    padding-top: 26px;
-    padding-bottom: 21px;
+    padding-top: 31px;
+    padding-bottom: 20px;
     border-bottom: 1px solid #dddfe0;
 
     &--deactive {
@@ -145,6 +162,11 @@
 
   .editor__toggle {
     right: 42px;
+
+    &:hover,
+    &:active {
+      background-color: @pink;
+    }
   }
 
   .editor__buttons {
@@ -159,9 +181,22 @@
   .editor__bar {
     width: 25px;
     height: 25px;
+    margin-left: 0;
+    padding-bottom: 0;
 
     &--bright {
       margin-left: 5px;
+      margin-top: -11px;
+    }
+  }
+
+  .editor__item {
+    width: 24px;
+    height: 22px;
+    fill: @pink;
+
+    &--contrast {
+      width: 18px;
     }
   }
 }
@@ -170,7 +205,7 @@
   .editor {
     width: 940px;
     margin: 0 auto;
-    margin-bottom: 94px;
+    margin-bottom: 77px;
     padding-top: 14px;
   }
 
@@ -188,7 +223,7 @@
   }
 
   .editor__tool {
-    padding-top: 15px;
+    padding-top: 16px;
     padding-bottom: 11px;
     width: 410px;
   }
@@ -216,5 +251,15 @@
   .editor__post {
     margin: 0;
     margin-right: 40px;
+  }
+
+  .editor__item {
+    width: 45px;
+    height: 45px;
+    fill: @pink;
+
+    &--contrast {
+      width: 33px;
+    }
   }
 }

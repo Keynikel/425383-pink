@@ -43,16 +43,6 @@
   border: 2px solid #e9ebec;
   border-radius: 50%;
 
-  svg {
-    width: 19px;
-    height: 15px;
-    margin: auto;
-    fill: @pink;
-    position: absolute;
-    left: 14px;
-    top: 16px;
-  }
-
   &:hover {
     border-color: @midnight;
   }
@@ -61,9 +51,19 @@
     border-color: #e9ebec;
   }
 
-  &:active path {
+  &:active .page-footer__social-logo {
     fill: fade(@pink, 30);
   }
+}
+
+.page-footer__social-logo {
+  width: 19px;
+  height: 15px;
+  margin: auto;
+  fill: @pink;
+  position: absolute;
+  left: 14px;
+  top: 16px;
 }
 
 @media (min-width: @tablet-width) {
@@ -72,6 +72,7 @@
 
     &--index {
       display: block;
+      margin-top: -12px;
     }
   }
 
@@ -107,7 +108,7 @@
 
   .page-footer__wrapper {
     width: 940px;
-    padding-top: 5px;
+    padding-top: 20px;
   }
 
   .page-footer__logo {

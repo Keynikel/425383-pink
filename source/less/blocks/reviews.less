@@ -170,15 +170,18 @@
       top: 146px;
       right: -19px;
     }
+  }
 
-    path {
-      fill: #c3c7ca;
-    }
+  .reviews__arrow {
+    fill: @gray;
 
     &:hover {
-      path {
-        fill: #7e868f;
-      }
+      fill: @midnight;
+    }
+
+    &:active {
+      fill: fade(@gray, 30);
     }
   }
+
 }
