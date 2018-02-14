@@ -24,12 +24,19 @@
 
   &--top {
     position: relative;
+    width: 100%;
+    height: auto;
+  }
 
-    picture {
+  & a {
+    width: inherit;
+  }
+
+  & picture {
       width: 100%;
       height: auto;
     }
-  }
+
 
   &--top::after {
     content: "Панорама дня";
@@ -204,6 +211,10 @@
 
     &--top::after {
       right: 130px;
+    }
+
+    & a {
+      width: 300px;
     }
   }
 

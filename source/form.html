@@ -133,9 +133,9 @@
         <div class="main-nav__main-wrapper">
           <div class="main-nav__logo-wrapper">
             <a class="logo logo--header" href="index.html">
-                <svg class="logo--pink-white-mobile" width="75" height="22"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-pink-white-mobile"></use></svg>
-                <svg class="logo--pink-white-tablet" width="148" height="40"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-pink-white-tablet"></use></svg>
-                <svg class="logo--pink-white-desktop" width="148" height="40"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-pink-white-desktop"></use></svg>
+              <svg class="logo__header logo__header--mobile" width="75" height="22"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-pink-white-mobile"></use></svg>
+              <svg class="logo__header logo__header--tablet" width="148" height="40"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-pink-white-tablet"></use></svg>
+              <svg class="logo__header logo__header--desktop" width="148" height="40"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-pink-white-desktop"></use></svg>
             </a>
             <button class="main-nav__toggle main-nav__toggle--open" type="button">
               <svg class="main-nav__icon main-nav__icon--burger" width="50" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-menu-burger"></use></svg>
@@ -171,7 +171,7 @@
       </div>
     </header>
     <main class="page-main">
-      <section class="page-main__wrapper">
+      <section class="competition">
         <h2 class="visually-hidden">Форма участника конкурса</h2>
         <p class="competition__slogan">
           Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
@@ -180,7 +180,7 @@
         <form class="competition__form" name="competition__form" method="post" action="https://echo.htmlacademy.ru">
           <div class="competition__personal-data">
             <fieldset class="competition__fields">
-              <legend class="visually-hidden" align="center">Личные данные</legend>
+              <legend class="visually-hidden">Личные данные</legend>
                 <p class="competition__field">
                   <label class="competition__label" for="surname">Фамилия</label>
                   <input class="competition__input" type="text" id="surname" name="surname" placeholder="Укажите фамилию *">
@@ -197,7 +197,7 @@
           </div>
           <div class="competition__achieve-fields">
             <fieldset class="competition__fields">
-              <legend class="competition__legend competition__legend--padded" align="center">Ваши безбашенные достижения в путешествии</legend>
+              <legend class="competition__legend competition__legend--padded">Ваши безбашенные достижения в путешествии</legend>
               <ul class="competition__checklist">
                 <li class="competition__achievements competition__achievements--selfie">
                   <input class="competition__checkbox competition__checkbox--checked" type="checkbox" id="selfie" name="achievements" value="selfie" checked>
@@ -246,8 +246,8 @@
           </div>
           <div class="competition__contacts-data">
             <fieldset class="competition__fields competition__fields--contacts">
-              <legend class="competition__legend competition__legend--hidden" align="center">Контактные данные</legend>
-              <div class="competition-wrapper--for-fields">
+              <legend class="competition__legend competition__legend--hidden">Контактные данные</legend>
+              <div class="competition__wrapper">
                 <p class="competition__field competition__field--phone">
                   <label class="competition__label" for="phone">Номер телефона</label>
                   <input class="competition__input competition__input--phone" type="tel" id="phone" name="phone" placeholder="Номер, пожалуйста">
@@ -261,7 +261,7 @@
           </div>
           <div class="competition__application-data">
             <fieldset class="competition__fields">
-              <legend class="competition__legend competition__legend--padded" align="center">С каким приложением путешествовали?</legend>
+              <legend class="competition__legend competition__legend--padded">С каким приложением путешествовали?</legend>
               <ul class="competition__application-list">
                 <li class="competition__application">
                   <input class="competition__radio competition__radio--checked" type="radio" id="iOS" name="applications" value="iOS" checked>
@@ -280,7 +280,7 @@
           </div>
           <div class="competition__emotion-description">
             <fieldset class="competition__fields">
-              <legend class="competition__legend" align="center">Опишите свои эмоции</legend>
+              <legend class="competition__legend">Опишите свои эмоции</legend>
               <textarea class="competition__textarea" name="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </fieldset>
           </div>
@@ -296,8 +296,8 @@
     <footer class="page-footer page-footer">
       <div class="page-footer__wrapper">
         <a class="page-footer__logo" href="index.html">
-          <svg class="logo--pink-blue-mobile" width="148" height="40"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-pink-blue-mobile"></use></svg>
-          <svg class="logo--pink-blue-desktop" width="148" height="40"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-pink-blue-desktop"></use></svg>
+          <svg class="logo__footer logo__footer--mobile" width="148" height="40"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-pink-blue-mobile"></use></svg>
+          <svg class="logo__footer logo__footer--desktop" width="148" height="40"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-pink-blue-desktop"></use></svg>
         </a>
         <ul class="page-footer__socials">
           <li class="page-footer__social">

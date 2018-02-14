@@ -1,58 +1,64 @@
 .logo {
-  &--header {
-    padding-left: 0;
-    margin-top: -3px;
-  }
+  padding-left: 0;
+  margin-top: -3px;
+}
 
-  &--pink-white-desktop,
-  &--pink-white-mobile,
-  &--pink-white-tablet {
+.logo__header {
+  &--desktop,
+  &--mobile,
+  &--tablet {
+    display: none;
     fill: @white;
   }
 
-  &--pink-white-desktop:hover,
-  &--pink-white-mobile:hover,
-  &--pink-white-tablet:hover {
+  &--mobile {
+    display: block;
+  }
+
+  &--desktop:hover,
+  &--mobile:hover,
+  &--tablet:hover {
     fill: @pink;
   }
 
-  &--pink-white-desktop:active,
-  &--pink-white-mobile:active,
-  &--pink-white-tablet:active {
+  &--desktop:active,
+  &--mobile:active,
+  &--tablet:active {
     fill: @white;
     opacity: 0.3;
   }
 
-  &--pink-blue-mobile:hover,
-  &--pink-blue-desktop:hover {
+}
+
+.logo__footer {
+  &--mobile:hover,
+  &--desktop:hover {
     fill: @pink;
   }
 
-  &--pink-blue-mobile:active,
-  &--pink-blue-desktop:active {
+  &--desktop {
+    display: none;
+  }
+
+  &--mobile:active,
+  &--desktop:active {
     fill: @midnight;
     opacity: 0.3;
-  }
-
-  &--pink-white-tablet,
-  &--pink-white-desktop,
-  &--pink-blue-desktop {
-    display: none;
   }
 }
 
 @media (min-width: @tablet-width) {
   .logo {
-    &--header {
-      padding-left: 0;
-      margin-top: -14px;
-    }
+    padding-left: 0;
+    margin-top: -14px;
+  }
 
-    &--pink-white-mobile {
+  .logo__header{
+    &--mobile {
       display: none;
     }
 
-    &--pink-white-tablet {
+    &--tablet {
       display: block;
     }
   }
@@ -60,18 +66,28 @@
 
 @media (min-width: @desktop-width) {
   .logo {
-    &--header {
-      padding-left: 25px;
-      margin-top: -12px;
-    }
+    padding-left: 25px;
+    margin-top: -12px;
+  }
 
-    &--pink-white-tablet,
+  .logo__header {
+    &--tablet,
     &--pink-blue-mobile {
       display: none;
     }
 
-    &--pink-white-desktop,
+    &--desktop,
     &--pink-blue-desktop {
+      display: block;
+    }
+  }
+
+  .logo__footer {
+    &--mobile {
+      display: none;
+    }
+
+    &--desktop {
       display: block;
     }
   }

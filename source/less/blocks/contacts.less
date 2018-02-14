@@ -78,10 +78,25 @@
     height: 100px;
     top: -1px;
     position: absolute;
-    background: url("../img/bg-triangle-white-footer.svg");
+    background-image: url("../img/bg-triangle-white-footer.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
+  }
+
+  &::after {
+    content: "";
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    margin-top: -43px;
+    left: 50%;
+    margin-left: -21px;
+    background-image: url("../img/icon-map-marker.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
   }
 }
 

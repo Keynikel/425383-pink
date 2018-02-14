@@ -144,10 +144,10 @@
       <nav class="main-nav main-nav--opened">
         <div class="main-nav__main-wrapper">
           <div class="main-nav__logo-wrapper">
-            <a class="logo logo--header" href="index.html">
-                <svg class="logo--pink-white-mobile" width="75" height="22"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-pink-white-mobile"></use></svg>
-                <svg class="logo--pink-white-tablet" width="148" height="40"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-pink-white-tablet"></use></svg>
-                <svg class="logo--pink-white-desktop" width="148" height="40"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-pink-white-desktop"></use></svg>
+            <a class="logo" href="index.html">
+                <svg class="logo__header logo__header--mobile" width="75" height="22"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-pink-white-mobile"></use></svg>
+                <svg class="logo__header logo__header--tablet" width="148" height="40"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-pink-white-tablet"></use></svg>
+                <svg class="logo__header logo__header--desktop" width="148" height="40"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-pink-white-desktop"></use></svg>
             </a>
             <button class="main-nav__toggle main-nav__toggle--open" type="button">
               <svg class="main-nav__icon main-nav__icon--burger" width="50" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-menu-burger"></use></svg>
@@ -191,11 +191,13 @@
         </p>
         <ul class="photos__list">
           <li class="photos__item photos__item--top">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg, img/panorama-desktop@2x.jpg 2x">
-              <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg, img/panorama-tablet@2x.jpg 2x">
-              <img class="photos__photo photos__photo--top" width="320" height="140" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Фотография Анны">
-            </picture>
+            <a href="#">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg, img/panorama-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg, img/panorama-tablet@2x.jpg 2x">
+                <img class="photos__photo photos__photo--top" width="320" height="140" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Фотография Анны">
+              </picture>
+            </a>
             <div class="photos__description photos__description--top">
               <div class="photos__info">
                 <b class="photos__author">Анна</b>
@@ -209,11 +211,13 @@
           </li>
           <div class="photos__wrapper">
             <li class="photos__item">
-              <picture>
-                <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg, img/photo-car-desktop@2x.jpg 2x">
-                <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg, img/photo-car-tablet@2x.jpg 2x">
-                <img class="photos__photo" width="280" height="180" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="Фотография Левона">
-              </picture>
+              <a href="#">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg, img/photo-car-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg, img/photo-car-tablet@2x.jpg 2x">
+                  <img class="photos__photo" width="280" height="180" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="Фотография Левона">
+                </picture>
+              </a>
               <div class="photos__description">
                 <div class="photos__info">
                   <b class="photos__author">Левон</b>
@@ -226,11 +230,13 @@
               </div>
             </li>
             <li class="photos__item">
-              <picture>
-                <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg, img/photo-drumset-desktop@2x.jpg 2x">
-                <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg, img/photo-drumset-tablet@2x.jpg 2x">
-                <img class="photos__photo" width="280" height="180" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Фотография Антона">
-              </picture>
+              <a href="#">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg, img/photo-drumset-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg, img/photo-drumset-tablet@2x.jpg 2x">
+                  <img class="photos__photo" width="280" height="180" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Фотография Антона">
+                </picture>
+              </a>
               <div class="photos__description">
                 <div class="photos__info">
                   <b class="photos__author">Антон</b>
@@ -243,11 +249,13 @@
               </div>
             </li>
             <li class="photos__item">
-              <picture>
-                <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg, img/photo-window-desktop@2x.jpg 2x">
-                <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg, img/photo-window-tablet@2x.jpg 2x">
-                <img class="photos__photo" width="280" height="180" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="Фотография Бориса">
-              </picture>
+              <a href="#">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg, img/photo-window-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg, img/photo-window-tablet@2x.jpg 2x">
+                  <img class="photos__photo" width="280" height="180" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="Фотография Бориса">
+                </picture>
+              </a>
               <div class="photos__description">
                 <div class="photos__info">
                   <b class="photos__author">Борис</b>
@@ -260,11 +268,13 @@
               </div>
             </li>
             <li class="photos__item">
-              <picture>
-                <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg, img/photo-fair-desktop@2x.jpg 2x">
-                <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg, img/photo-fair-tablet@2x.jpg 2x">
-                <img class="photos__photo" width="280" height="180" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="Фотография Сергея">
-              </picture>
+              <a href="#">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg, img/photo-fair-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg, img/photo-fair-tablet@2x.jpg 2x">
+                  <img class="photos__photo" width="280" height="180" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="Фотография Сергея">
+                </picture>
+              </a>
               <div class="photos__description">
                 <div class="photos__info">
                   <b class="photos__author">Сергей</b>
@@ -277,11 +287,13 @@
               </div>
             </li>
             <li class="photos__item">
-              <picture>
-                <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg, img/photo-pov-desktop@2x.jpg 2x">
-                <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg, img/photo-pov-tablet@2x.jpg 2x">
-                <img class="photos__photo" width="280" height="180" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="Фотография Максима">
-              </picture>
+              <a href="#">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg, img/photo-pov-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg, img/photo-pov-tablet@2x.jpg 2x">
+                  <img class="photos__photo" width="280" height="180" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="Фотография Максима">
+                </picture>
+              </a>
               <div class="photos__description">
                 <div class="photos__info">
                   <b class="photos__author">Максим</b>
@@ -294,11 +306,13 @@
               </div>
             </li>
             <li class="photos__item">
-              <picture>
-                <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg, img/photo-wing-desktop@2x.jpg 2x">
-                <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg, img/photo-wing-tablet@2x.jpg 2x">
-                <img class="photos__photo" width="280" height="180" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="Фотография Надежды">
-              </picture>
+              <a href="#">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg, img/photo-wing-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg, img/photo-wing-tablet@2x.jpg 2x">
+                  <img class="photos__photo" width="280" height="180" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="Фотография Надежды">
+                </picture>
+              </a>
               <div class="photos__description">
                 <div class="photos__info">
                   <b class="photos__author">Надежда</b>
@@ -366,8 +380,8 @@
     <footer class="page-footer page-footer">
       <div class="page-footer__wrapper">
         <a class="page-footer__logo" href="index.html">
-          <svg class="logo--pink-blue-mobile" width="148" height="40"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-pink-blue-mobile"></use></svg>
-          <svg class="logo--pink-blue-desktop" width="148" height="40"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-pink-blue-desktop"></use></svg>
+          <svg class="logo__footer logo__footer--mobile" width="148" height="40"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-pink-blue-mobile"></use></svg>
+          <svg class="logo__footer logo__footer--desktop" width="148" height="40"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-pink-blue-desktop"></use></svg>
         </a>
         <ul class="page-footer__socials">
           <li class="page-footer__social">
