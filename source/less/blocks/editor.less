@@ -37,6 +37,10 @@
       display: none;
     }
   }
+
+  &--active .editor__toggle {
+    background-color: @pink;
+  }
 }
 
 .editor__scale {
@@ -167,11 +171,6 @@
 
   .editor__toggle {
     right: 42px;
-
-    &:hover,
-    &:active {
-      background-color: @pink;
-    }
   }
 
   .editor__buttons {

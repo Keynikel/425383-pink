@@ -128,7 +128,7 @@
   .photos__slogan {
     width: 540px;
     margin: 0 auto;
-    padding: 91px 20px 71px;
+    padding: 91px 37px 71px 20px;
     font-size: 18px;
     line-height: 30px;
 
@@ -155,6 +155,10 @@
       height: 665px;
     }
 
+    &--top .photos__description {
+      flex-direction: row;
+    }
+
     &--top::after {
       top: 62px;
     }
@@ -170,18 +174,15 @@
     }
   }
 
-  .photos__author {
-    margin-left: 11px;
-  }
-
   .photos__description {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
     align-content: flex-start;
     min-height: 111px;
     width: 270px;
     padding-top: 24px;
+    padding-left: 36px;
     padding-bottom: 15px;
 
     &--top {
@@ -201,8 +202,9 @@
     }
   }
 
-  .photos__likes{
-    padding-left: 0px;
+  .photos__likes {
+    padding-left: 0;
+    margin-top: auto;
 
     &::before {
       top: 9px;
