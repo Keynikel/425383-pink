@@ -1,7 +1,7 @@
 .prices {
   padding: 0;
-  padding-top: 90px;
-  padding-bottom: 28px;
+  padding-top: 88px;
+  padding-bottom: 29px;
   background-color: @light-gray;
   background-image: url("../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
@@ -36,6 +36,7 @@
     padding: 0;
     margin: 0;
     font-size: 24px;
+    line-height: 33px;
     font-weight: lighter;
   }
 
@@ -48,6 +49,40 @@
     background-color: @light-gray;
     border: none;
   }
+
+  &--hit {
+    position: relative;
+  }
+
+  &--hit::before {
+    position: absolute;
+    content: "";
+    height: 73px;
+    width: 73px;
+    top: 0px;
+    left: 0px;
+    background-image: url("../img/bg-hit.svg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 73px 73px;
+  }
+
+  &--hit::after {
+    position: absolute;
+    content: "хит";
+    height: 10px;
+    width: 28px;
+    top: 20px;
+    left: 4px;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+    vertical-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #d22856;
+    transform: rotate(-45deg);
+  }
 }
 
 .prices__list-body {
@@ -57,8 +92,8 @@
 .prices__field {
   position: relative;
   box-sizing: border-box;
-  padding-top: 15px;
-  padding-bottom: 12px;
+  padding-top: 13px;
+  padding-bottom: 14px;
   padding-left: 20px;
   font-size: 14px;
   line-height: 30px;
@@ -67,7 +102,7 @@
   border-top: none;
   background-repeat: no-repeat;
   background-position: 93% center;
-  background-size: 30px 32px;
+  background-size: 29px 32px;
 
   &--empty {
     min-width: 0;
@@ -85,12 +120,13 @@
 
   &--no {
     background-image: url("../img/icon-no.svg");
-    background-position: 93% 44%;
+    background-position: 92% 37%;
+    background-size: 27px 28px;
   }
 }
 
 .prices__toggles {
-  margin-top: 35px;
+  margin-top: 32px;
   margin-left: 15px;
   text-align: center;
 }
@@ -118,6 +154,18 @@
     padding-top: 12px;
     padding-bottom: 8px;
     min-width: 151px;
+    padding-right: 11px;
+    border-left: 1px;
+
+    &--hit::before {
+      top: -15px;
+      left: -2px;
+    }
+
+    &--hit::after {
+      top: 12px;
+      left: -3px;
+    }
   }
 
   .prices__toggles {
@@ -175,6 +223,16 @@
     p {
       font-size: 24px;
       line-height: 31px;
+    }
+
+    &--hit::before {
+      top: 0;
+      left: -2px;
+    }
+
+    &--hit::after {
+      top: 20px;
+      left: 9px;
     }
   }
 

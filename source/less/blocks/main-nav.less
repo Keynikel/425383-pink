@@ -35,6 +35,7 @@
 }
 
 .main-nav__icon {
+  height: 40px;
   fill: @white;
 
   &:hover,
@@ -70,15 +71,16 @@
   .main-nav--nojs .main-nav__toggle {
     display: none;
   }
-
-  .main-nav__icon {
-    height: 50px;
-  }
 }
 
 @media (min-width: @tablet-width) {
   .main-nav {
     min-width: 365px;
+  }
+
+  .main-nav__icon {
+    height: 50px;
+    fill: @white;
   }
 
   .main-nav__logo-wrapper {
