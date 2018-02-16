@@ -1,7 +1,13 @@
+.copyright {
+  position: relative;
+}
+
 .copyright__link {
-  width: 42px;
+  position: absolute;
+  top: 32px;
+  right: 5px;
+  width: 30px;
   height: 49px;
-  margin-left: 17px;
 }
 
 .copyright__htmlacademy {
@@ -18,14 +24,17 @@
 
 @media (min-width: @tablet-width) {
   .copyright__link {
-    margin-left: 3px;
+    top: -13px;
   }
 }
-
 
 @media (min-width: @desktop-width) {
   .copyright__text {
     font-size: 18px;
     line-height: 30px;
+  }
+
+  .copyright__link {
+    top: -5px;
   }
 }
