@@ -1,0 +1,40 @@
+.copyright {
+  position: relative;
+}
+
+.copyright__link {
+  position: absolute;
+  top: 32px;
+  right: 5px;
+  width: 30px;
+  height: 49px;
+}
+
+.copyright__htmlacademy {
+  fill: @pink;
+}
+
+.copyright__htmlacademy:hover {
+  fill: @midnight;
+}
+
+.copyright__htmlacademy:active {
+  fill: #e9ebec;
+}
+
+@media (min-width: @tablet-width) {
+  .copyright__link {
+    top: -10px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .copyright__text {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .copyright__link {
+    top: -5px;
+  }
+}

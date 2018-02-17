@@ -33,11 +33,27 @@
     flex-direction: row;
   }
 
+  .site-list__href {
+    padding-bottom: 10px;
+  }
+
   .site-list__item {
     padding-left: 42px;
     padding-right: 42px;
     border: none;
     font-weight: normal;
     text-transform: none;
+
+    &--active {
+      cursor: pointer;
+
+      .site-list__href {
+        border-bottom: 2px solid @white;
+      }
+    }
+  }
+
+  .site-list__href:hover {
+    border-color: @pink;
   }
 }

@@ -2,7 +2,8 @@
   min-height: 271px;
   background-color: #1d2631;
 
-  &--photo {
+  &--photo,
+  &--form {
     min-height: 165px;
     background-color: transparent;
     display: flex;
@@ -10,9 +11,9 @@
 }
 
 .intro__header {
-  margin: 27px auto;
+  margin: 29px auto;
   padding: 0;
-  width: 180px;
+  width: 230px;
   font-size: 24px;
   line-height: 30px;
   font-weight: lighter;
@@ -85,10 +86,11 @@
 @media (min-width: @tablet-width) {
   .intro {
     background-color: transparent;
+    min-height: 330px;
 
     &--index {
       width: 300px;
-      margin: 0 20px;
+      margin: 0 9px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -96,29 +98,44 @@
   }
 
   .intro__download {
-    margin-top: 25px;
+    margin-top: 0;
   }
 
   .intro__download-button {
-    margin-top: 40px;
+    margin-top: 30px;
+    padding: 15px 45px;
   }
 
   .intro__header {
     display: block;
-    width: 245px;
+    width: 356px;
     text-align: center;
-    font-size: 40px;
-    line-height: 44px;
+    font-size: 50px;
+    line-height: 57px;
     font-weight: lighter;
 
     &--index {
-      display: block;
+      margin-top: 23px;
+      margin-bottom: 0;
+      width: 245px;
+      font-size: 40px;
+      line-height: 48px;
+    }
+
+    &--photo {
+      margin: 72px auto;
+    }
+
+    &--form {
+      margin: 71px auto;
+      width: 500px;
+      line-height: 59px;
     }
   }
 
   .intro__platforms {
     padding-top: 48px;
-    padding-bottom: 35px;
+    padding-bottom: 36px;
   }
 
   .intro__description {
@@ -131,27 +148,46 @@
 
 @media (min-width: @desktop-width) {
   .intro {
+    min-height: 281px;
+
     &--index {
-      margin: 0 17px;
-      width: 303px;
+      margin: 0;
+      width: 300px;
     }
   }
 
   .intro__download {
-    margin-top: 40px;
+    margin-top: 0;
   }
 
   .intro__header {
     font-size: 50px;
     line-height: 59px;
+
+    &--index {
+      margin-top: 39px;
+      margin-left: 26px;
+      margin-bottom: 0;
+    }
+
+    &--photo {
+      margin-top: 65px;
+    }
+
+    &--form {
+      margin: 63px auto;
+      width: 750px;
+    }
   }
 
   .intro__download-button {
     margin-top: 54px;
+    padding: 16px 28px;
   }
 
   .intro__platforms {
     padding-top: 69px;
     padding-bottom: 54px;
+    margin-left: -6px;
   }
 }
