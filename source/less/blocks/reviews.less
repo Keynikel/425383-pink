@@ -56,9 +56,9 @@
 .reviews__toggles {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  min-width: 59px;
+  max-width: 59px;
   min-height: 12px;
   margin: 0 auto;
   padding-top: 33px;
@@ -110,7 +110,8 @@
   }
 
   .reviews__text {
-    margin-right: 21px;
+    margin: 0;
+    padding-right: 20px;
     font-size: 18px;
     line-height: 30px;
   }
@@ -127,12 +128,28 @@
 
   .reviews__list {
     margin: 0 auto;
-    padding-top: 120px;
+    padding-top: 118px;
     max-width: 690px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 5px;
+      left: 50%;
+      margin-left: -41px;
+      width: 83px;
+      height: 67px;
+      background-image: url("../img/icon-quotes.svg");
+      background-size: auto;
+      background-repeat: no-repeat;
+      background-position: top center;
+    }
   }
 
   .reviews__author {
-    margin-top: 35px;
+    margin-top: 36px;
+    margin-left: -4px;
     font-size: 24px;
   }
 
@@ -144,23 +161,6 @@
   .reviews__text {
     padding: 0;
     margin-left: -30px;
-  }
-
-  .reviews__item {
-    position: relative;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: -115px;
-      left: 44%;
-      width: 83px;
-      height: 67px;
-      background-image: url("../img/icon-quotes.svg");
-      background-size: auto;
-      background-repeat: no-repeat;
-      background-position: top center;
-    }
   }
 
   .reviews__toggles {
@@ -180,12 +180,12 @@
 
     &--prev {
       top: 146px;
-      left: -19px;
+      left: -22px;
     }
 
     &--next {
       top: 146px;
-      right: -19px;
+      right: -17px;
     }
   }
 

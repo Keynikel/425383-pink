@@ -1,6 +1,14 @@
 .main-nav {
   background-color: @midnight;
   width: 100%;
+
+  &--closed {
+    background-color: transparent;
+  }
+
+  &--closed .main-nav__logo-wrapper {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
 }
 
 .main-nav__logo-wrapper {

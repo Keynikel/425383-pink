@@ -83,6 +83,7 @@
 
 .competition__legend {
   padding-bottom: 20px;
+  padding-right: 10px;
   min-width: 100%;
   text-align: center;
   font-size: 14px;
@@ -106,7 +107,7 @@
   vertical-align: top;
   margin: 0;
   padding: 0;
-  padding-top: 20px;
+  padding-top: 21px;
   list-style: none;
 }
 
@@ -143,7 +144,7 @@
 .competition__checks-label {
   position: relative;
   display: block;
-  padding-left: 70px;
+  padding-left: 68px;
   font-size: 18px;
   line-height: 35px;
   color: @midnight;
@@ -203,14 +204,15 @@
 }
 
 .competition__emotion-description {
-  padding-top: 33px;
+  padding-top: 36px;
 }
 
 .competition__textarea {
   width: 100%;
   box-sizing: border-box;
   min-height: 200px;
-  padding: 12px 20px 0 20px;
+  padding: 16px 20px 0 18px;
+  margin-top: -4px;
   border: 2px solid #e5e5e5;
   line-height: 29px;
 }
@@ -238,7 +240,7 @@
 }
 
 .competition__additional {
-  margin-top: 33px;
+  margin-top: 35px;
   margin-right: 6px;
   margin-bottom: 9px;
   font-size: 14px;
@@ -284,6 +286,7 @@
   }
 
   .competition__fields {
+    box-sizing: border-box;
     width: 620px;
     padding-bottom: 0;
   }
@@ -305,17 +308,17 @@
   }
 
   .competition__checks-label {
-    padding-left: 70px;
+    padding-left: 67px;
   }
 
   .competition__checklist .competition__checks-label {
-    padding-left: 59px;
+    padding-left: 58px;
   }
 
   .competition__legend {
     padding-top: 23px;
     padding-left: 25px;
-    padding-right: 45px;
+    padding-right: 36px;
     max-width: 460px;
     min-width: 300px;
 
@@ -358,6 +361,7 @@
   }
 
   .competition__wrapper {
+    margin-bottom: -2px;
     flex-direction: row;
   }
 
@@ -380,7 +384,7 @@
         content: "";
         position: absolute;
         top: 2px;
-        right: 62px;
+        right: 60px;
         width: 62px;
         height: 58px;
         background-color: @gray;
@@ -429,10 +433,20 @@
     }
   }
 
+  .competition__checkbox + label::before {
+    left: -4px;
+    top: -1px;
+  }
+
+  .competition__checkbox:checked + .competition__checks-label .icon-yes {
+    top: 10px;
+    left: 4px;
+  }
+
   .competition__achieve-fields {
     order: 4;
     margin: 0 auto;
-    padding-top: 32px;
+    padding-top: 33px;
     background-color: @white;
 
     .competition__fields {
@@ -449,12 +463,13 @@
   }
 
   .competition__checklist {
-    padding-top: 23px;
+    padding-top: 26px;
   }
 
   .competition__emotion-description {
     order: 5;
     margin: 0 auto;
+    padding-top: 33px;
 
     .competition__fields {
       padding-top: 17px;
@@ -466,6 +481,7 @@
   .competition__textarea {
     width: 500px;
     min-height: 193px;
+    margin-top: 0;
     margin-left: 58px;
     padding-top: 16px;
   }
@@ -474,7 +490,7 @@
     order: 6;
     display: flex;
     align-items: center;
-    margin: 68px auto;
+    margin: 67px auto 66px;
   }
 
   .competition__submit {
@@ -505,6 +521,10 @@
   .competition__slogan {
     width: 750px;
     padding-left: 7px;
+
+    &--hidden {
+      display: inline;
+    }
   }
 
   .competition__achieve-fields,
@@ -512,8 +532,18 @@
     background-color: @white;
   }
 
+  .competition__checkbox + label::before {
+      left: 0px;
+      top: -2px;
+  }
+
+  .competition_checkbox:checked + .competition__checks-label .icon-yes {
+      top: 9px;
+      left: 7px;
+  }
+
   .competition__achieve-fields {
-    padding-top: 28px;
+    padding-top: 31px;
 
     .competition__fields {
       width: 940px;
@@ -533,7 +563,7 @@
     }
 
     .competition__checks-label {
-      padding-left: 59px;
+      padding-left: 57px;
     }
   }
 
@@ -594,7 +624,7 @@
     }
 
     .competition__field {
-      padding-left: 60px;
+      padding-left: 57px;
       margin-bottom: 7px;
 
       &::after {
@@ -603,12 +633,13 @@
       }
 
       &--email {
-        margin-left: 8px;
+        margin-left: 14px;
       }
     }
 
     .competition__input {
       width: 375px;
+      padding-left: 22px;
     }
 
     .competition__label {
@@ -622,7 +653,7 @@
   }
 
   .competition__legend {
-    padding-left: 35px;
+    padding-left: 25px;
   }
 
   .competition__field {
@@ -656,9 +687,11 @@
 
     .competition__textarea {
       width: 820px;
+      margin-top: -2px;
       min-height: 125px;
       margin-left: 58px;
-      padding-top: 14px;
+      padding-top: 20px;
+      line-height: 18px;
     }
   }
 
@@ -695,7 +728,7 @@
   }
 
   .competition__buttons {
-    margin-top: 66px;
+    margin-top: 68px;
     justify-content: space-between;
   }
 
