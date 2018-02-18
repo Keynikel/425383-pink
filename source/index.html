@@ -4,14 +4,10 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
-    <div style="display:none">
-      <include src="build/img/sprite.svg"></include>
-    </div>
-    <!--svg version="1.1" style="display: none">
+    <svg version="1.1" style="display: none">
       <symbol viewBox="0 0 74 23" id="logo-pink-white-mobile">
         <g>
           <path d="M0,1.449c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.147v0.064 c0,4.861-4.057,7.373-8.854,7.373H2.544v6.825c0,0.708-0.58,1.288-1.288,1.288C0.58,22.859,0,22.279,0,21.571V1.449z M8.114,12.428 c3.734,0,6.182-1.996,6.182-4.958V7.405c0-3.22-2.415-4.894-6.054-4.894H2.544v9.917H8.114z"></path>
@@ -138,9 +134,9 @@
       <symbol viewBox="0 0 60 60" id="logo-htmlacademy">
         <path d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"></path>
       </symbol>
-    </svg-->
+    </svg>
     <header class="page-header page-header--index">
-        <nav class="main-nav main-nav--opened">
+        <nav class="main-nav main-nav--opened main-nav--nojs">
           <div class="main-nav__main-wrapper">
             <div class="main-nav__logo-wrapper">
               <a class="logo logo--header" href="index.html">
@@ -180,20 +176,20 @@
             <h1 class="intro__header intro__header--index">Взгляните на жизнь иначе!</h1>
             <section class="intro__download">
               <h2 class="visually-hidden">Скачать приложение</h2>
-              <a class="intro__download-button button">Скачать приложение</a>
+              <a class="intro__download-button button" href="https://www.apple.com/itunes/working-itunes/market/">Скачать приложение</a>
               <ul class="intro__platforms">
                 <li class="intro__platform">
-                  <a class="intro__link intro__link--apple" href="https://www.apple.com/ru/itunes/" target="_blank" aria-label="Скачать для Apple">
+                  <a class="intro__link intro__link--apple" href="https://www.apple.com/itunes/working-itunes/market/" target="_blank" aria-label="Скачать для Apple">
                     <span class="visually-hidden">Apple</span>
                   </a>
                 </li>
                 <li class="intro__platform">
-                  <a class="intro__link intro__link--android" href="https://play.google.com/store" target="_blank" aria-label="Скачать для Android">
+                  <a class="intro__link intro__link--android" href="https://play.google.com/store/apps;hl=ru" target="_blank" aria-label="Скачать для Android">
                     <span class="visually-hidden">Android</span>
                   </a>
                 </li>
                 <li class="intro__platform">
-                  <a class="intro__link intro__link--windows" href="https://www.microsoft.com/ru-ru/store/appsvnext/windows" target="_blank" aria-label="Скачать для Windods">
+                  <a class="intro__link intro__link--windows" href="https://www.microsoft.com/" target="_blank" aria-label="Скачать для Windods">
                     <span class="visually-hidden">Windows</span>
                   </a>
                 </li>

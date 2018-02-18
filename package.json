@@ -1,4 +1,9 @@
 {
+  "browserslist": [
+    "last 2 versions",
+    "IE 11",
+    "Firefox ESR"
+  ],
   "name": "pink",
   "version": "13.0.0",
   "private": true,
@@ -7,14 +12,15 @@
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "7.2.x",
     "browser-sync": "2.23.x",
-    "gulp": "^3.9.1",
+    "del": "^3.0.0",
+    "gulp": "3.9.x",
     "gulp-csso": "^3.0.1",
     "gulp-imagemin": "^4.1.0",
-    "gulp-less": "3.4.x",
     "gulp-plumber": "1.2.x",
     "gulp-postcss": "7.0.x",
     "gulp-posthtml": "^3.0.4",
     "gulp-rename": "^1.2.2",
+    "gulp-less": "3.4.x",
     "gulp-svgstore": "^6.1.1",
     "gulp-webp": "^3.0.0",
     "posthtml-include": "^1.1.0",
@@ -22,18 +28,6 @@
     "stylelint": "8.4.x",
     "stylelint-config-htmlacademy": "0.1.x"
   },
-  "scripts": {
-    "editorconfig": "editorconfig-cli",
-    "stylelint": "stylelint \"source/less/**/*.less\" --syntax less",
-    "test": "npm run editorconfig && npm run stylelint",
-    "build": "gulp style",
-    "start": "gulp serve"
-  },
-  "browserslist": [
-    "last 2 versions",
-    "IE 11",
-    "Firefox ESR"
-  ],
   "editorconfig-cli": [
     "*.json",
     "*.js",
@@ -45,7 +39,14 @@
   "engines": {
     "node": "8.9"
   },
-  "dependencies": {
-    "del": "^3.0.0"
+  "scripts": {
+    "build": "gulp build",
+    "editorconfig": "editorconfig-cli",
+    "gulp": "./node_modules/.bin/gulp",
+    "images": "gulp images",
+    "start": "npm run build && gulp serve",
+    "stylelint": "stylelint \"source/less/**/*.less\" --syntax less",
+    "test": "npm run editorconfig && npm run stylelint",
+    "webp": "gulp webp"
   }
 }
