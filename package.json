@@ -12,15 +12,25 @@
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "7.2.x",
     "browser-sync": "2.23.x",
+<<<<<<< HEAD
     "del": "^3.0.0",
     "gulp": "3.9.x",
     "gulp-csso": "^3.0.1",
     "gulp-imagemin": "^4.1.0",
+=======
+    "gulp": "^3.9.1",
+    "gulp-csso": "^3.0.1",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-less": "3.4.x",
+>>>>>>> 7fef5cafb03a90b26c75ecf7139983f7c92f9eb2
     "gulp-plumber": "1.2.x",
     "gulp-postcss": "7.0.x",
     "gulp-posthtml": "^3.0.4",
     "gulp-rename": "^1.2.2",
+<<<<<<< HEAD
     "gulp-less": "3.4.x",
+=======
+>>>>>>> 7fef5cafb03a90b26c75ecf7139983f7c92f9eb2
     "gulp-svgstore": "^6.1.1",
     "gulp-webp": "^3.0.0",
     "posthtml-include": "^1.1.0",
@@ -39,6 +49,7 @@
   "engines": {
     "node": "8.9"
   },
+<<<<<<< HEAD
   "scripts": {
     "build": "gulp build",
     "editorconfig": "editorconfig-cli",
@@ -48,5 +59,9 @@
     "stylelint": "stylelint \"source/less/**/*.less\" --syntax less",
     "test": "npm run editorconfig && npm run stylelint",
     "webp": "gulp webp"
+=======
+  "dependencies": {
+    "del": "^3.0.0"
+>>>>>>> 7fef5cafb03a90b26c75ecf7139983f7c92f9eb2
   }
 }
